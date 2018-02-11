@@ -1,0 +1,161 @@
+
+html {
+    font-weight: 300;
+    color: whitesmoke;
+}
+
+body {
+    background-color: #333333;
+    color: whitesmoke;
+}
+
+table.highlight > tbody > tr:hover {
+    color: #1bdee5 ;
+}
+
+table {
+    margin-top: 5%;
+}
+
+caption {
+    font-size: 160%;
+    transition: 0.5s;
+    transform: translate3d(0px, -0px, 0px);
+}
+
+caption:hover {
+    border-radius: 20px;
+    transition: 0.5s;
+    transform: translate3d(2px, -2px, 2px);
+}
+
+td {
+    border: 1px solid #f9f9f9;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#nav-mobile a{
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+#navMobileIcon {
+    margin: 10px 0px 10px 0px;
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    vertical-align: middle;
+}
+
+#navMIcon {
+    text-align: center;
+}
+
+#navbarIcon {
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 4%;
+    height: auto;
+    margin-right: 1%;
+}
+
+#jdaLink, #devlink {
+    color: #ff00ee;
+}
+
+#blueAvatar {
+    margin-top: 1%;
+    border-radius: 100%;
+    border: 0.125em solid whitesmoke;
+    width: 8%;
+    height: auto;
+}
+
+#parallaxBg {
+    display: block;
+    transform: translate3d(-50%, 185px, 0px);
+    filter: brightness(55%);
+}
+
+#twitchIcon {
+    width: 12%;
+    height: auto;
+}
+
+#copyright {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#sound_modal {
+    background-color: #24292e;
+    width: 40%;
+}
+
+.modal .modal-footer {
+    background-color: #f9f9f9;
+}
+
+#sound_form {
+    margin: 10% 20% 10% 20%;
+}
+
+.input-field label, .input-field input[type=text]:focus + label, .input-field .prefix.active  {
+    color: #ff00ee;
+}
+
+[type="checkbox"]:checked+label:before {
+    border-right: 2px solid #4CAF50 ;
+    border-bottom: 2px solid #4CAF50 ;
+}
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #4CAF50;
+    box-shadow: 0 1px 0 0 #4CAF50;
+}
+
+.parallaxCommands {
+    height: 50%;
+}
+.parallaxStats {
+    height: 80%;
+}
+
+.buttons a{
+    margin-top: 3px;
+}
+
+
+.material-icons {
+    font-size: 30px;
+}
+
+.blueCard {
+    transition: 0.5s;
+    transform: translate3d(0px, 0px, 0px);
+    padding: 0px 20px 20px 15px;
+    text-align: center;
+
+}
+.blueCard:hover {
+    border-radius: 20px;
+    transition: 0.5s;
+    transform: translate3d(3px, -3px, 3px);
+}
+
+.header {
+    transition: 0.5s;
+    transform: translate3d(0px, -0px, 0px);
+}
+
+.header:hover {
+    border-radius: 20px;
+    transition: 0.5s;
+    transform: translate3d(2px, -2px, 2px);
+}
+
+/* Tooltips */
+.backdrop{
+    background-color: #aad4ff;
+}
