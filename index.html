@@ -15,7 +15,7 @@
     <link href="./ts_files/icon" rel="stylesheet">
     <link rel="stylesheet" href="./ts_files/materialize.css">
     <link type="text/css" rel="stylesheet" href="./ts_files/main.css">
-    <link rel="icon" type="image/png" href="http://mbot.gachi.ru/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/FaL03/FaL03.github.io/master/d221da21399c4a0fe3cef80c90345326.png">
 	
     <script type="text/javascript" async="" src="./ts_files/analytics.js"></script><script type="text/javascript" src="./ts_files/jquery-2.1.1.min.js"></script>
     <script src="./ts_files/materialize.min.js"></script>
@@ -257,7 +257,7 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>>>donadd</code></td>
-<td>Добавить донатор в базу данных. <strong>Бот Владелец Только</strong></td>
+<td>Добавить донатор в базу данных. <strong>Только для владельца</strong></td>
 <td><code>>>donadd Donate Amount</code></td>
 </tr>
 <tr>
@@ -267,52 +267,52 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>>>execsql</code></td>
-<td>Выполняет команду SQL и возвращает количество затронутых строк>> Опасно. <strong>Бот Владелец Только</strong></td>
+<td>Выполняет команду SQL и возвращает количество затронутых строк>> Опасно. <strong>Только для владельца</strong></td>
 <td><code>>>execsql UPDATE Currency SET Amount=Amount+1234</code></td>
 </tr>
 <tr>
 <td><code>>>deletewaifus</code></td>
-<td>Удаляет все из WaifuUpdates и таблиц WaifuInfo. <strong>Бот Владелец Только</strong></td>
+<td>Удаляет все из WaifuUpdates и таблиц WaifuInfo. <strong>Только для владельца</strong></td>
 <td><code>>>deletewaifus</code></td>
 </tr>
 <tr>
 <td><code>>>deletecurrency</code></td>
-<td>Удаляет все, начиная от валюты и CurrencyTransactions. <strong>Бот Владелец Только</strong></td>
+<td>Удаляет все, начиная от валюты и CurrencyTransactions. <strong>Только для владельца</strong></td>
 <td><code>>>deletecurrency</code></td>
 </tr>
 <tr>
 <td><code>>>deleteplaylists</code></td>
-<td>Удаляет все из MusicPlaylists. <strong>Бот Владелец Только</strong></td>
+<td>Удаляет все из MusicPlaylists. <strong>Только для владельца</strong></td>
 <td><code>>>deleteplaylists</code></td>
 </tr>
 <tr>
 <td><code>>>deleteexp</code></td>
-<td>deleteexp <strong>бот владелец только</strong></td>
+<td>deleteexp <strong>Только для владельца</strong></td>
 <td><code>deleteexp</code></td>
 </tr>
 <tr>
 <td><code>>>gvc</code></td>
-<td>Функция переключает игру голосовой канал в голосовом канале в данный момент>> Пользователи, которые вступают в игру голосовой канал будет автоматически переадресовывается на голосовой канал с названием их текущую игру, если она существует>> Не могу переместить пользователей в каналы что бот имеет разрешение Connect для>> Одному на сервере. <strong>Требуется администратор сервера разрешения.</strong></td>
+<td>Функция переключает игру голосовой канал в голосовом канале в данный момент. Пользователи, которые вступают в игру голосовой канал будет автоматически переадресовывается на голосовой канал с названием их текущую игру, если она существует>> Не могу переместить пользователей в каналы что бот имеет разрешение Connect для>> Одному на сервере. <strong>Требуется администратор сервера разрешения.</strong></td>
 <td><code>>>gvc</code></td>
 </tr>
 <tr>
 <td><code>>>languageset</code> <code>>>langset</code></td>
-<td>Устанавливает для сервера язык ответ>> Если строк ответ бота были переведены на этот язык, бот будет использовать этот язык в этом сервере>> Сброс, используя <code>default</code> как имя локали>> Предоставить никаких аргументов, чтобы выбрать язык>></td>
+<td>Устанавливает для сервера язык ответ. Если строк ответ бота были переведены на этот язык, бот будет использовать этот язык в этом сервере>> Сброс, используя <code>default</code> как имя локали>> Предоставить никаких аргументов, чтобы выбрать язык>></td>
 <td><code>>>langset de-DE</code> или <code>>>langset default</code></td>
 </tr>
 <tr>
 <td><code>>>langsetdefault</code> <code>>>langsetd</code></td>
-<td>Наборы бота язык по умолчанию>> Все сервера, которые используют локаль по умолчанию будет использовать это>> Параметр, чтобы <code>default</code> использовать хозяина в текущей культуре>> Предоставить никаких аргументов, чтобы выбрать язык>></td>
+<td>Наборы бота язык по умолчанию. Все сервера, которые используют локаль по умолчанию будет использовать это. Параметр, чтобы <code>default</code> использовать хозяина в текущей культуре>> Предоставить никаких аргументов, чтобы выбрать язык>></td>
 <td><code>>>langsetd en-US</code> или <code>>>langsetd default</code></td>
 </tr>
 <tr>
 <td><code>>>languageslist</code> <code>>>langli</code></td>
-<td>Список языков для перевода (или его часть) существуют банкоматы>></td>
+<td>Список языков для перевода (или его часть) существуют банкоматы.</td>
 <td><code>>>langli</code></td>
 </tr>
 <tr>
 <td><code>>>logserver</code></td>
-<td>Включает или отключает все события журнала>> Если включено, все события журнала будут входить в этот канал. <strong>Требуется администратор сервера разрешения.</strong> <strong>Владелец Бота Только</strong></td>
+<td>Включает или отключает все события журнала. Если включено, все события журнала будут входить в этот канал. <strong>Требуется администратор сервера разрешения.</strong> <strong>Владелец Бота Только</strong></td>
 <td><code>>>logserver enable</code> или <code>>>logserver disable</code></td>
 </tr>
 <tr>
@@ -332,7 +332,7 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>>>setmuterole</code></td>
-<td>Задает имя роли, которые будут назначены люди, которые должны быть приглушенными>> По умолчанию маширо-немой. <strong>Требует ManageRoles сервер разрешения.</strong></td>
+<td>Задает имя роли, которые будут назначены люди, которые должны быть приглушенными>> По умолчанию Наказан. <strong>Требует ManageRoles сервер разрешения.</strong></td>
 <td><code>>>setmuterole Silenced</code></td>
 </tr>
 <tr>
@@ -367,22 +367,22 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>>>rotateplaying</code> <code>>>ropl</code></td>
-<td>Переключает вращение игрового состояния динамической строки, которые вы ранее указали. <strong>Бот Владелец Только</strong></td>
+<td>Переключает вращение игрового состояния динамической строки, которые вы ранее указали. <strong>Только для владельца</strong></td>
 <td><code>>>ropl</code></td>
 </tr>
 <tr>
 <td><code>>>addplaying</code> <code>>>adpl</code></td>
-<td>Добавляет указанную строку в список играющих строк, чтобы повернуть>> Поддерживаемые заполнителей: <code>%servers%</code>, <code>%users%</code>, <code>%playing%</code>, <code>%queued%</code>, <code>%time%</code>, <code>%shardid%</code>, <code>%shardcount%</code>, <code>%shardguilds%</code>. <strong>Бот Владелец Только</strong></td>
+<td>Добавляет указанную строку в список играющих строк, чтобы повернуть>> Поддерживаемые заполнителей: <code>%servers%</code>, <code>%users%</code>, <code>%playing%</code>, <code>%queued%</code>, <code>%time%</code>, <code>%shardid%</code>, <code>%shardcount%</code>, <code>%shardguilds%</code>. <strong>Только для владельца</strong></td>
 <td><code>>>adpl</code></td>
 </tr>
 <tr>
 <td><code>>>listplaying</code> <code>>>lipl</code></td>
-<td>Списки всех игровых статусов с соответствующим номером. <strong>Бот Владелец Только</strong></td>
+<td>Списки всех игровых статусов с соответствующим номером. <strong>Только для владельца</strong></td>
 <td><code>>>lipl</code></td>
 </tr>
 <tr>
 <td><code>>>removeplaying</code> <code>>>rmpl</code> <code>>>repl</code></td>
-<td>Удаляет играя строки на заданное число. <strong>Бот Владелец Только</strong></td>
+<td>Удаляет играя строки на заданное число. <strong>Только для владельца</strong></td>
 <td><code>>>rmpl</code></td>
 </tr>
 <tr>
@@ -392,7 +392,7 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>>>defprefix</code></td>
-<td>Задает префикс по умолчанию бот для всех команд бота>> Предоставить никаких аргументов ознакомиться с текущим префиксом по умолчанию>> Это не изменит текущего префикса данного сервера. <strong>Бот Владелец Только</strong></td>
+<td>Задает префикс по умолчанию бот для всех команд бота>> Предоставить никаких аргументов ознакомиться с текущим префиксом по умолчанию>> Это не изменит текущего префикса данного сервера. <strong>Только для владельца</strong></td>
 <td><code>>>defprefix +</code></td>
 </tr>
 <tr>
@@ -467,37 +467,37 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>>>scadd</code></td>
-<td>Добавляет команду в список команд, которые будут выполняться автоматически в текущем канале, в порядке, они были добавлены в бота, когда он стартапов до. <strong>Бот Владелец Только</strong></td>
+<td>Добавляет команду в список команд, которые будут выполняться автоматически в текущем канале, в порядке, они были добавлены в бота, когда он стартапов до. <strong>Только для владельца</strong></td>
 <td><code>>>scadd >>stats</code></td>
 </tr>
 <tr>
 <td><code>>>sclist</code></td>
-<td>Перечислены все команды в порядке их выполнения при запуске. <strong>Бот Владелец Только</strong></td>
+<td>Перечислены все команды в порядке их выполнения при запуске. <strong>Только для владельца</strong></td>
 <td><code>>>sclist</code></td>
 </tr>
 <tr>
 <td><code>>>wait</code></td>
-<td>Используется только в качестве команды запуска>> Ждет определенное количество миллисекунд, прежде чем продолжить выполнение следующих команд запуска. <strong>Бот Владелец Только</strong></td>
+<td>Используется только в качестве команды запуска>> Ждет определенное количество миллисекунд, прежде чем продолжить выполнение следующих команд запуска. <strong>Только для владельца</strong></td>
 <td><code>>>wait 3000</code></td>
 </tr>
 <tr>
 <td><code>>>scrm</code></td>
-<td>Удаляет команду запуска с командной текста. <strong>Бот Владелец Только</strong></td>
+<td>Удаляет команду запуска с командной текста. <strong>Только для владельца</strong></td>
 <td><code>>>scrm >>stats</code></td>
 </tr>
 <tr>
 <td><code>>>scclr</code></td>
-<td>Удаляет все команды запуска. <strong>Бот Владелец Только</strong></td>
+<td>Удаляет все команды запуска. <strong>Только для владельца</strong></td>
 <td><code>>>scclr</code></td>
 </tr>
 <tr>
 <td><code>>>fwmsgs</code></td>
-<td>Переключает передачи не-команду сообщения, отправленные на бота ДМ с ботом владельцы <strong>бот владелец только</strong></td>
+<td>Переключает передачи не-команду сообщения, отправленные на бота ДМ с ботом владельцы <strong>Только для владельца</strong></td>
 <td><code>>>fwmsgs</code></td>
 </tr>
 <tr>
 <td><code>>>fwtoall</code></td>
-<td>Переключает ли сообщения, будет направлено всем владельцам бот или только на первый указанный в учетных данных>>json-файла <strong>бот владелец только</strong></td>
+<td>Переключает ли сообщения, будет направлено всем владельцам бот или только на первый указанный в учетных данных>>json-файла <strong>Только для владельца</strong></td>
 <td><code>>>fwtoall</code></td>
 </tr>
 <tr>
@@ -507,27 +507,27 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>>>restartshard</code></td>
-<td>Попробуйте (пере)подключении сегментов с определенным shardid, когда он умирает>> Никто не знает, будет ли он работать>> Держите глаз на консоль на наличие ошибок. <strong>Бот Владелец Только</strong></td>
+<td>Попробуйте (пере)подключении сегментов с определенным shardid, когда он умирает>> Никто не знает, будет ли он работать>> Держите глаз на консоль на наличие ошибок. <strong>Только для владельца</strong></td>
 <td><code>>>restartshard 2</code></td>
 </tr>
 <tr>
 <td><code>>>leave</code></td>
-<td>Делает Маширо покинуть сервер>> Требуется либо имя сервера или ID сервера. <strong>Бот Владелец Только</strong></td>
+<td>Делает Маширо покинуть сервер>> Требуется либо имя сервера или ID сервера. <strong>Только для владельца</strong></td>
 <td><code>>>leave 123123123331</code></td>
 </tr>
 <tr>
 <td><code>>>die</code></td>
-<td>Закрывает бот вниз. <strong>Бот Владелец Только</strong></td>
+<td>Закрывает бот вниз. <strong>Только для владельца</strong></td>
 <td><code>>>die</code></td>
 </tr>
 <tr>
 <td><code>>>restart</code></td>
-<td>Перезапускает бота>> Может не работать. <strong>Бот Владелец Только</strong></td>
+<td>Перезапускает бота>> Может не работать. <strong>Только для владельца</strong></td>
 <td><code>>>restart</code></td>
 </tr>
 <tr>
 <td><code>>>setname</code> <code>>>newnm</code></td>
-<td>Дает бот новое имя. <strong>Бот Владелец Только</strong></td>
+<td>Дает бот новое имя. <strong>Только для владельца</strong></td>
 <td><code>>>newnm BotName</code></td>
 </tr>
 <tr>
@@ -537,32 +537,32 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>>>setstatus</code></td>
-<td>Устанавливает статус бота>> (Онлайн/Простоя/Днр/Невидимый) <strong>Бот Владелец Только</strong></td>
+<td>Устанавливает статус бота>> (Онлайн/Простоя/Днр/Невидимый) <strong>Только для владельца</strong></td>
 <td><code>>>setstatus Idle</code></td>
 </tr>
 <tr>
 <td><code>>>setavatar</code> <code>>>setav</code></td>
-<td>Устанавливает новый аватар для MashiroBot>> Аргумент-это прямая ссылка на изображение. <strong>Бот Владелец Только</strong></td>
-<td><code>>>setav http://i>>imgur>>com/xTG3a1I>>jpg</code></td>
+<td>Устанавливает новый аватар для Совёнок. Аргумент-это прямая ссылка на изображение. <strong>Только для владельца</strong></td>
+<td><code>>>setav http://i>>imgur.com/xTG3a1I.jpg</code></td>
 </tr>
 <tr>
 <td><code>>>setgame</code></td>
-<td>Устанавливает игру с ботами. <strong>Бот Владелец Только</strong></td>
+<td>Устанавливает игру с ботами. <strong>Только для владельца</strong></td>
 <td><code>>>setgame with snakes</code></td>
 </tr>
 <tr>
 <td><code>>>setstream</code></td>
-<td>Наборы поток ботов>> Первый аргумент-это ссылка на twitch, второй аргумент-имя потока. <strong>Бот Владелец Только</strong></td>
+<td>Наборы поток ботов>> Первый аргумент-это ссылка на twitch, второй аргумент-имя потока. <strong>Только для владельца</strong></td>
 <td><code>>>setstream TWITCHLINK Hello</code></td>
 </tr>
 <tr>
 <td><code>>>send</code></td>
-<td>Отправляет сообщение кому-то на другой сервер через бота>> Отдельного сервера и канала/ID пользователей с <code>|</code> и префикс канала идентификатор <code>c:</code> и идентификатор пользователя с <code>u:</code>. <strong>Бот Владелец Только</strong></td>
+<td>Отправляет сообщение кому-то на другой сервер через бота>> Отдельного сервера и канала/ID пользователей с <code>|</code> и префикс канала идентификатор <code>c:</code> и идентификатор пользователя с <code>u:</code>. <strong>Только для владельца</strong></td>
 <td><code>>>send serverid|c:channelid message</code> или <code>>>send serverid|u:userid message</code></td>
 </tr>
 <tr>
 <td><code>>>reloadimages</code></td>
-<td>Повторная загрузка изображений бот использует>> Безопасен для использования даже тогда, когда бот активно используется. <strong>Бот Владелец Только</strong></td>
+<td>Повторная загрузка изображений бот использует>> Безопасен для использования даже тогда, когда бот активно используется. <strong>Только для владельца</strong></td>
 <td><code>>>reloadimages</code></td>
 </tr>
 <tr>
@@ -748,7 +748,7 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>crstatsclear</code></td>
-<td>Сброс счетчиков на <code>>>crstats</code>>> Вы можете задать триггер, чтобы очистить статистику только для этого триггера. <strong>Бот владелец только</strong></td>
+<td>Сброс счетчиков на <code>>>crstats</code>>> Вы можете задать триггер, чтобы очистить статистику только для этого триггера. <strong>Только для владельца</strong></td>
 <td><code>>>crstatsclear</code> или <code>>>crstatsclear rng</code></td>
 </tr>
 <tr>
@@ -775,12 +775,12 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>timelyreset</code></td>
-<td>Сбрасывает все пользовательские ожидания на <code>>>timely</code> команду. <strong>Бот владелец только</strong></td>
+<td>Сбрасывает все пользовательские ожидания на <code>>>timely</code> команду. <strong>Только для владельца</strong></td>
 <td><code>>>timelyreset</code></td>
 </tr>
 <tr>
 <td><code>>>timelyset</code></td>
-<td>Устанавливает 'своевременная' валютная сумма пособия для пользователей>> Второй аргумент-это период в часах, по умолчанию составляет 24 часа. <strong>Бот владелец только</strong></td>
+<td>Устанавливает 'своевременная' валютная сумма пособия для пользователей>> Второй аргумент-это период в часах, по умолчанию составляет 24 часа. <strong>Только для владельца</strong></td>
 <td><code>>>timelyset 100</code> или <code>>>timelyset 50 12</code></td>
 </tr>
 <tr>
@@ -805,12 +805,12 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>award</code></td>
-<td>Награды, кому-то определенной суммы валюты>> Вы также можете указать имя роли валютного награда для всех пользователей в роль. <strong>Бот владелец только</strong></td>
+<td>Награды, кому-то определенной суммы валюты>> Вы также можете указать имя роли валютного награда для всех пользователей в роль. <strong>Только для владельца</strong></td>
 <td><code>>>award 100 @person</code> или <code>>>award 5 Role Of Gamblers</code></td>
 </tr>
 <tr>
 <td><code>>>take</code></td>
-<td>Занимает определенное количество валюты от кого-то. <strong>Бот владелец только</strong></td>
+<td>Занимает определенное количество валюты от кого-то. <strong>Только для владельца</strong></td>
 <td><code>>>take 1 @SomeGuy</code></td>
 </tr>
 <tr>
@@ -840,7 +840,7 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>startevent</code></td>
-<td>Начинается одно из событий можно увидеть на общественном маширо>> <code>reaction</code> и <code>sneakygamestatus</code> только 2 доступен уже сейчас. <strong>Бот владелец только</strong></td>
+<td>Начинается одно из событий можно увидеть на общественном маширо>> <code>reaction</code> и <code>sneakygamestatus</code> только 2 доступен уже сейчас. <strong>Только для владельца</strong></td>
 <td><code>>>startevent reaction</code></td>
 </tr>
 <tr>
@@ -915,12 +915,12 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>slotstats</code></td>
-<td>Показывает общую статистику команды слот для этого бота сессии. <strong>Бот владелец только</strong></td>
+<td>Показывает общую статистику команды слот для этого бота сессии. <strong>Только для владельца</strong></td>
 <td><code>>>slotstats</code></td>
 </tr>
 <tr>
 <td><code>>>slottest</code></td>
-<td>Тесты, чтобы посмотреть, сколько слотов выплаты за х количество пьес. <strong>Бот владелец только</strong></td>
+<td>Тесты, чтобы посмотреть, сколько слотов выплаты за х количество пьес. <strong>Только для владельца</strong></td>
 <td><code>>>slottest 1000</code></td>
 </tr>
 <tr>
@@ -1092,7 +1092,7 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>typeadd</code></td>
-<td>Добавлена новая статья на конкурс типирования. <strong>Бот владелец только</strong></td>
+<td>Добавлена новая статья на конкурс типирования. <strong>Только для владельца</strong></td>
 <td><code>>>typeadd wordswords</code></td>
 </tr>
 <tr>
@@ -1102,7 +1102,7 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>typedel</code></td>
-<td>Удаление вписав в статье дается идентификатор. <strong>Бот владелец только</strong></td>
+<td>Удаление вписав в статье дается идентификатор. <strong>Только для владельца</strong></td>
 <td><code>>>typedel 3</code></td>
 </tr>
 <tr>
@@ -1265,12 +1265,12 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>local</code> <code>>>lo</code></td>
-<td>Очереди на локальный файл путем указания полного пути. <strong>Бот владелец только</strong></td>
+<td>Очереди на локальный файл путем указания полного пути. <strong>Только для владельца</strong></td>
 <td><code>>>lo C:/music/mysong>>mp3</code></td>
 </tr>
 <tr>
 <td><code>>>localplaylst</code> <code>>>lopl</code></td>
-<td>Очереди все песни из каталога. <strong>Бот владелец только</strong></td>
+<td>Очереди все песни из каталога. <strong>Только для владельца</strong></td>
 <td><code>>>lopl C:/music/classical</code></td>
 </tr>
 <tr>
@@ -1348,7 +1348,7 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>hgit</code></td>
-<td>Создает commandlist>>файл MD. <strong>Бот владелец только</strong></td>
+<td>Создает commandlist>>файл MD. <strong>Только для владельца</strong></td>
 <td><code>>>hgit</code></td>
 </tr>
 <tr>
@@ -1446,7 +1446,7 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>nsfwcc</code></td>
-<td>Очищает кэш и блоги. <strong>Бот владелец только</strong></td>
+<td>Очищает кэш и блоги. <strong>Только для владельца</strong></td>
 <td><code>>>nsfwcc</code></td>
 </tr>
 </tbody>
@@ -1549,17 +1549,17 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>ubl</code></td>
-<td>Либо [добавить]или [рем]овес пользователя, указанное упоминание или ID из черного списка. <strong>Бот владелец только</strong></td>
+<td>Либо [добавить]или [рем]овес пользователя, указанное упоминание или ID из черного списка. <strong>Только для владельца</strong></td>
 <td><code>>>ubl add @SomeUser</code> или <code>>>ubl rem 12312312313</code></td>
 </tr>
 <tr>
 <td><code>>>cbl</code></td>
-<td>Либо [добавить]или [Рэм]овес канала задается идентификатором из черного списка. <strong>Бот владелец только</strong></td>
+<td>Либо [добавить]или [Рэм]овес канала задается идентификатором из черного списка. <strong>Только для владельца</strong></td>
 <td><code>>>cbl rem 12312312312</code></td>
 </tr>
 <tr>
 <td><code>>>sbl</code></td>
-<td>Либо [добавить]или [Рэм]овес сервер указан по имени или ID из черного списка. <strong>Бот владелец только</strong></td>
+<td>Либо [добавить]или [Рэм]овес сервер указан по имени или ID из черного списка. <strong>Только для владельца</strong></td>
 <td><code>>>sbl add 12312321312</code> или <code>>>sbl rem SomeTrashServer</code></td>
 </tr>
 <tr>
@@ -1604,17 +1604,17 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>listglobalperms</code> <code>>>lgp</code></td>
-<td>Списки глобальных разрешений, установленных владельцем бота. <strong>Бот владелец только</strong></td>
+<td>Списки глобальных разрешений, установленных владельцем бота. <strong>Только для владельца</strong></td>
 <td><code>>>lgp</code></td>
 </tr>
 <tr>
 <td><code>>>globalmodule</code> <code>>>gmod</code></td>
-<td>Переключает ли модуль может быть использован на любом сервере. <strong>Бот владелец только</strong></td>
+<td>Переключает ли модуль может быть использован на любом сервере. <strong>Только для владельца</strong></td>
 <td><code>>>gmod nsfw</code></td>
 </tr>
 <tr>
 <td><code>>>globalcommand</code> <code>>>gcmd</code></td>
-<td>Переключает ли команда может быть использована на любом сервере. <strong>Бот владелец только</strong></td>
+<td>Переключает ли команда может быть использована на любом сервере. <strong>Только для владельца</strong></td>
 <td><code>>>gcmd >>stats</code></td>
 </tr>
 <tr>
@@ -1624,7 +1624,7 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>resetglobalperms</code></td>
-<td>Сброс глобальных разрешений, установленных владельцем бота. <strong>Бот владелец только</strong></td>
+<td>Сброс глобальных разрешений, установленных владельцем бота. <strong>Только для владельца</strong></td>
 <td><code>>>resetglobalperms</code></td>
 </tr>
 </tbody>
@@ -2013,7 +2013,7 @@ Version : 0>>1
 <tbody>
 <tr>
 <td><code>>>togethertube</code> <code>>>totube</code></td>
-<td>Создает новый номер на <a href="https://togethertube>>com/">https://togethertube>>com</a> и показывает ссылку в чат>></td>
+<td>Создает новый номер на <a href="https://togethertube.com/">https://togethertube.com</a> и показывает ссылку в чат>></td>
 <td><code>>>totube</code></td>
 </tr>
 <tr>
@@ -2073,12 +2073,12 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>listservers</code></td>
-<td>Сервера списков бот на некоторую базовую информацию>> 15 на страницу. <strong>Бот владелец только</strong></td>
+<td>Сервера списков бот на некоторую базовую информацию>> 15 на страницу. <strong>Только для владельца</strong></td>
 <td><code>>>listservers 3</code></td>
 </tr>
 <tr>
 <td><code>>>savechat</code></td>
-<td>Сохраняет количество сообщений в текстовый файл и отправляет его вам. <strong>Бот владелец только</strong></td>
+<td>Сохраняет количество сообщений в текстовый файл и отправляет его вам. <strong>Только для владельца</strong></td>
 <td><code>>>savechat 150</code></td>
 </tr>
 <tr>
@@ -2088,7 +2088,7 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>botconfigedit</code> <code>>>bce</code></td>
-<td>Устанавливает один из доступных параметров конфига бота в указанную стоимость>> Использовать команду без параметров, чтобы получить список доступных параметров. <strong>Бот владелец только</strong></td>
+<td>Устанавливает один из доступных параметров конфига бота в указанную стоимость>> Использовать команду без параметров, чтобы получить список доступных параметров. <strong>Только для владельца</strong></td>
 <td><code>>>bce CurrencyName b1nzy</code> или <code>>>bce</code></td>
 </tr>
 <tr>
@@ -2128,7 +2128,7 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>activity</code></td>
-<td>Чеки для спамеров. <strong>Бот владелец только</strong></td>
+<td>Чеки для спамеров. <strong>Только для владельца</strong></td>
 <td><code>>>activity</code></td>
 </tr>
 <tr>
@@ -2183,7 +2183,7 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>remindtemplate</code></td>
-<td>Задает сообщение, когда напомнить срабатывает>> Имеющиеся заполнители <code>%user%</code> - пользователя, запустившего команду, <code>%message%</code> - Сообщения, указанного в напоминать, <code>%target%</code> - цель канала напоминать. <strong>Бот владелец только</strong></td>
+<td>Задает сообщение, когда напомнить срабатывает>> Имеющиеся заполнители <code>%user%</code> - пользователя, запустившего команду, <code>%message%</code> - Сообщения, указанного в напоминать, <code>%target%</code> - цель канала напоминать. <strong>Только для владельца</strong></td>
 <td><code>>>remindtemplate %user%, do %message%!</code></td>
 </tr>
 <tr>
@@ -2271,7 +2271,7 @@ Version : 0>>1
 </tr>
 <tr>
 <td><code>>>xpcurreward</code> <code>>>xpcr</code></td>
-<td>Устанавливает валютную награду на заданном уровне>> Обеспечить никакое количество для того, чтобы снять награду. <strong>Бот владелец только</strong></td>
+<td>Устанавливает валютную награду на заданном уровне>> Обеспечить никакое количество для того, чтобы снять награду. <strong>Только для владельца</strong></td>
 <td><code>>>xpcr 3 50</code></td>
 </tr>
 <tr>
