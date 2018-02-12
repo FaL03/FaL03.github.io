@@ -252,11 +252,6 @@ Version : 0>>3
 <td><code>.donators</code></td>
 </tr>
 <tr>
-<td><code>.donadd</code></td>
-<td>Add a donator to the database. <strong>Bot Owner Only</strong></td>
-<td><code>.donadd Donate Amount</code></td>
-</tr>
-<tr>
 <td><code>.autoassignrole</code> <code>.aar</code></td>
 <td>Automaticaly assigns a specified role to every user who joins the server. <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.aar to disable</code> or <code>.aar Role Name to enable</code></td>
@@ -413,7 +408,7 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>.prune</code> <code>.clear</code></td>
-<td><code>.prune</code> removes all Mashiro's messages in the last 100 messages. <code>.prune X</code> removes last <code>X</code> number of messages from the channel (up to 100). <code>.prune @Someone</code> removes all Someone's messages in the last 100 messages. <code>.prune @Someone X</code> removes last <code>X</code> number of 'Someone's' messages in the channel.</td>
+<td><code>.prune</code> removes all Sovonok's messages in the last 100 messages. <code>.prune X</code> removes last <code>X</code> number of messages from the channel (up to 100). <code>.prune @Someone</code> removes all Someone's messages in the last 100 messages. <code>.prune @Someone X</code> removes last <code>X</code> number of 'Someone's' messages in the channel.</td>
 <td><code>.prune</code> or <code>.prune 5</code> or <code>.prune @Someone</code> or <code>.prune @Someone X</code></td>
 </tr>
 <tr>
@@ -508,7 +503,7 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>.leave</code></td>
-<td>Makes Mashiro leave the server. Either server name or server ID is required. <strong>Bot Owner Only</strong></td>
+<td>Makes Sovonok leave the server. Either server name or server ID is required. <strong>Bot Owner Only</strong></td>
 <td><code>.leave 123123123331</code></td>
 </tr>
 <tr>
@@ -538,7 +533,7 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>.setavatar</code> <code>.setav</code></td>
-<td>Sets a new avatar image for the MashiroBot. Argument is a direct link to an image. <strong>Bot Owner Only</strong></td>
+<td>Sets a new avatar image for the SovonokBot. Argument is a direct link to an image. <strong>Bot Owner Only</strong></td>
 <td><code>.setav http://i.imgur.com/xTG3a1I.jpg</code></td>
 </tr>
 <tr>
@@ -573,7 +568,7 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>.greetmsg</code></td>
-<td>Sets a new join announcement message which will be shown in the server's channel. Type <code>%user%</code> if you want to mention the new member. Using it with no message will show the current greet message. You can use embed json from <a href="http://mbot.gachi.ru/embedbuilder/">http://mbot.gachi.ru/embedbuilder/</a> instead of a regular text, if you want the message to be embedded. <strong>Requires ManageServer server permission.</strong></td>
+<td>Sets a new join announcement message which will be shown in the server's channel. Type <code>%user%</code> if you want to mention the new member. Using it with no message will show the current greet message. You can use embed json from <a href="https://fal03.github.io/">https://fal03.github.io/</a> instead of a regular text, if you want the message to be embedded. <strong>Requires ManageServer server permission.</strong></td>
 <td><code>.greetmsg Welcome, %user%.</code></td>
 </tr>
 <tr>
@@ -583,7 +578,7 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>.greetdmmsg</code></td>
-<td>Sets a new join announcement message which will be sent to the user who joined. Type <code>%user%</code> if you want to mention the new member. Using it with no message will show the current DM greet message. You can use embed json from <a href="http://mbot.gachi.ru/embedbuilder/">http://mbot.gachi.ru/embedbuilder/</a> instead of a regular text, if you want the message to be embedded. <strong>Requires ManageServer server permission.</strong></td>
+<td>Sets a new join announcement message which will be sent to the user who joined. Type <code>%user%</code> if you want to mention the new member. Using it with no message will show the current DM greet message. You can use embed json from <a href="https://fal03.github.io/">https://fal03.github.io/</a> instead of a regular text, if you want the message to be embedded. <strong>Requires ManageServer server permission.</strong></td>
 <td><code>.greetdmmsg Welcome to the server, %user%</code></td>
 </tr>
 <tr>
@@ -593,7 +588,7 @@ Version : 0>>3
 </tr>
 <tr>
 <td><code>.byemsg</code></td>
-<td>Sets a new leave announcement message. Type <code>%user%</code> if you want to show the name the user who left. Type <code>%id%</code> to show id. Using this command with no message will show the current bye message. You can use embed json from <a href="http://mbot.gachi.ru/embedbuilder/">http://mbot.gachi.ru/embedbuilder/</a> instead of a regular text, if you want the message to be embedded. <strong>Requires ManageServer server permission.</strong></td>
+<td>Sets a new leave announcement message. Type <code>%user%</code> if you want to show the name the user who left. Type <code>%id%</code> to show id. Using this command with no message will show the current bye message. You can use embed json from <a href="https://fal03.github.io/">https://fal03.github.io/</a> instead of a regular text, if you want the message to be embedded. <strong>Requires ManageServer server permission.</strong></td>
 <td><code>.byemsg %user% has left.</code></td>
 </tr>
 <tr>
@@ -1123,200 +1118,6 @@ Version : 0.1
 </tr>
 </tbody>
 </table>
-
-<table class="highlight bordered">
-    <caption class="blue-text text-darken-2">Music commands</caption>
-    <thead>
-    <tr>
-        <th>Command</th>
-        <th>Description</th>
-        <th>Example usage</th>
-    </tr>
-    </thead>
-<tbody>
-<tr>
-<td><code>.play</code> <code>.start</code></td>
-<td>If no arguments are specified, acts as <code>.next 1</code> command. If you specify a song number, it will jump to that song. If you specify a search query, acts as a <code>.q</code> command</td>
-<td><code>.play</code> or <code>.play 5</code> or <code>.play Dream Of Venice</code></td>
-</tr>
-<tr>
-<td><code>.queue</code> <code>.q</code> <code>.yq</code></td>
-<td>Queue a song using keywords or a link. Bot will join your voice channel. <strong>You must be in a voice channel</strong>.</td>
-<td><code>.q Dream Of Venice</code></td>
-</tr>
-<tr>
-<td><code>.queuenext</code> <code>.qn</code></td>
-<td>Works the same as <code>.queue</code> command, except it enqueues the new song after the current one. <strong>You must be in a voice channel</strong>.</td>
-<td><code>.qn Dream Of Venice</code></td>
-</tr>
-<tr>
-<td><code>.queuesearch</code> <code>.qs</code> <code>.yqs</code></td>
-<td>Search for top 5 youtube song result using keywords, and type the index of the song to play that song. Bot will join your voice channel. <strong>You must be in a voice channel</strong>.</td>
-<td><code>.qs Dream Of Venice</code></td>
-</tr>
-<tr>
-<td><code>.listqueue</code> <code>.lq</code></td>
-<td>Lists 10 currently queued songs per page. Default page is 1.</td>
-<td><code>.lq</code> or <code>.lq 2</code></td>
-</tr>
-<tr>
-<td><code>.next</code> <code>.n</code></td>
-<td>Goes to the next song in the queue. You have to be in the same voice channel as the bot. You can skip multiple songs, but in that case songs will not be requeued if .rcs or .rpl is enabled.</td>
-<td><code>.n</code> or <code>.n 5</code></td>
-</tr>
-<tr>
-<td><code>.stop</code> <code>.s</code></td>
-<td>Stops the music and preserves the current song index. Stays in the channel.</td>
-<td><code>.s</code></td>
-</tr>
-<tr>
-<td><code>.autodisconnect</code> <code>.autodc</code></td>
-<td>Toggles whether the bot should disconnect from the voice channel once it's done playing all of the songs.</td>
-<td><code>.autodc</code></td>
-</tr>
-<tr>
-<td><code>.destroy</code> <code>.d</code></td>
-<td>Completely stops the music and unbinds the bot from the channel. (may cause weird behaviour)</td>
-<td><code>.d</code></td>
-</tr>
-<tr>
-<td><code>.pause</code> <code>.p</code></td>
-<td>Pauses or Unpauses the song.</td>
-<td><code>.p</code></td>
-</tr>
-<tr>
-<td><code>.volume</code> <code>.vol</code></td>
-<td>Sets the music playback volume (0-100%)</td>
-<td><code>.vol 50</code></td>
-</tr>
-<tr>
-<td><code>.defvol</code> <code>.dv</code></td>
-<td>Sets the default music volume when music playback is started (0-100). Persists through restarts.</td>
-<td><code>.dv 80</code></td>
-</tr>
-<tr>
-<td><code>.songremove</code> <code>.srm</code></td>
-<td>Remove a song by its # in the queue, or 'all' to remove all songs from the queue and reset the song index.</td>
-<td><code>.srm 5</code></td>
-</tr>
-<tr>
-<td><code>.playlists</code> <code>.pls</code></td>
-<td>Lists all playlists. Paginated, 20 per page. Default page is 0.</td>
-<td><code>.pls 1</code></td>
-</tr>
-<tr>
-<td><code>.deleteplaylist</code> <code>.delpls</code></td>
-<td>Deletes a saved playlist using its id. Works only if you made it or if you are the bot owner.</td>
-<td><code>.delpls 5</code></td>
-</tr>
-<tr>
-<td><code>.save</code></td>
-<td>Saves a playlist under a certain name. Playlist name must be no longer than 20 characters and must not contain dashes.</td>
-<td><code>.save classical1</code></td>
-</tr>
-<tr>
-<td><code>.load</code></td>
-<td>Loads a saved playlist using its ID. Use <code>.pls</code> to list all saved playlists and <code>.save</code> to save new ones.</td>
-<td><code>.load 5</code></td>
-</tr>
-<tr>
-<td><code>.fairplay</code> <code>.fp</code></td>
-<td>Toggles fairplay. While enabled, the bot will prioritize songs from users who didn't have their song recently played instead of the song's position in the queue.</td>
-<td><code>.fp</code></td>
-</tr>
-<tr>
-<td><code>.songautodelete</code> <code>.sad</code></td>
-<td>Toggles whether the song should be automatically removed from the music queue when it finishes playing.</td>
-<td><code>.sad</code></td>
-</tr>
-<tr>
-<td><code>.soundcloudqueue</code> <code>.sq</code></td>
-<td>Queue a soundcloud song using keywords. Bot will join your voice channel. <strong>You must be in a voice channel</strong>.</td>
-<td><code>.sq Dream Of Venice</code></td>
-</tr>
-<tr>
-<td><code>.soundcloudpl</code> <code>.scpl</code></td>
-<td>Queue a Soundcloud playlist using a link.</td>
-<td><code>.scpl soundcloudseturl</code></td>
-</tr>
-<tr>
-<td><code>.nowplaying</code> <code>.np</code></td>
-<td>Shows the song that the bot is currently playing.</td>
-<td><code>.np</code></td>
-</tr>
-<tr>
-<td><code>.shuffle</code> <code>.sh</code> <code>.plsh</code></td>
-<td>Shuffles the current playlist.</td>
-<td><code>.plsh</code></td>
-</tr>
-<tr>
-<td><code>.playlist</code> <code>.pl</code></td>
-<td>Queues up to 500 songs from a youtube playlist specified by a link, or keywords.</td>
-<td><code>.pl &lt;youtube_playlist_link&gt;</code></td>
-</tr>
-<tr>
-<td><code>.radio</code> <code>.ra</code></td>
-<td>Queues a radio stream from a link. It can be a direct mp3 radio stream, .m3u, .pls .asx or .xspf (Usage Video: <a href="https://streamable.com/al54">https://streamable.com/al54</a>)</td>
-<td><code>.ra radio link here</code></td>
-</tr>
-<tr>
-<td><code>.local</code> <code>.lo</code></td>
-<td>Queues a local file by specifying a full path. <strong>Bot owner only</strong></td>
-<td><code>.lo C:/music/mysong.mp3</code></td>
-</tr>
-<tr>
-<td><code>.localplaylst</code> <code>.lopl</code></td>
-<td>Queues all songs from a directory. <strong>Bot owner only</strong></td>
-<td><code>.lopl C:/music/classical</code></td>
-</tr>
-<tr>
-<td><code>.move</code> <code>.mv</code></td>
-<td>Moves the bot to your voice channel. (works only if music is already playing)</td>
-<td><code>.mv</code></td>
-</tr>
-<tr>
-<td><code>.movesong</code> <code>.ms</code></td>
-<td>Moves a song from one position to another.</td>
-<td><code>.ms 5&gt;3</code></td>
-</tr>
-<tr>
-<td><code>.setmaxqueue</code> <code>.smq</code></td>
-<td>Sets a maximum queue size. Supply 0 or no argument to have no limit.</td>
-<td><code>.smq 50</code> or <code>.smq</code></td>
-</tr>
-<tr>
-<td><code>.setmaxplaytime</code> <code>.smp</code></td>
-<td>Sets a maximum number of seconds (&gt;14) a song can run before being skipped automatically. Set 0 to have no limit.</td>
-<td><code>.smp 0</code> or <code>.smp 270</code></td>
-</tr>
-<tr>
-<td><code>.reptcursong</code> <code>.rcs</code></td>
-<td>Toggles repeat of current song.</td>
-<td><code>.rcs</code></td>
-</tr>
-<tr>
-<td><code>.rpeatplaylst</code> <code>.rpl</code></td>
-<td>Toggles repeat of all songs in the queue (every song that finishes is added to the end of the queue).</td>
-<td><code>.rpl</code></td>
-</tr>
-<tr>
-<td><code>.autoplay</code> <code>.ap</code></td>
-<td>Toggles autoplay - When the song is finished, automatically queue a related Youtube song. (Works only for Youtube songs and when queue is empty)</td>
-<td><code>.ap</code></td>
-</tr>
-<tr>
-<td><code>.setmusicchannel</code> <code>.smch</code></td>
-<td>Sets the current channel as the default music output channel. This will output playing, finished, paused and removed songs to that channel instead of the channel where the first song was queued in. <strong>Requires ManageMessages server permission.</strong></td>
-<td><code>.smch</code></td>
-</tr>
-<tr>
-<td><code>.unsetmusicchannel</code> <code>.usmch</code></td>
-<td>Bot will output playing, finished, paused and removed songs to the channel where the first song was queued in. <strong>Requires ManageMessages server permission.</strong></td>
-<td><code>.smch</code></td>
-</tr>
-</tbody>
-</table>
-
 <table class="highlight bordered">
     <caption class="blue-text text-darken-2">Help commands</caption>
     <thead>
@@ -1338,24 +1139,9 @@ Version : 0.1
 <td><code>.commands Administration</code> or <code>.cmds Admin</code></td>
 </tr>
 <tr>
-<td><code>.help</code> <code>.h</code></td>
-<td>Either shows a help for a single command, or DMs you help link if no arguments are specified.</td>
-<td><code>.h .cmds</code> or <code>.h</code></td>
-</tr>
-<tr>
 <td><code>.hgit</code></td>
 <td>Generates the commandlist.md file. <strong>Bot owner only</strong></td>
 <td><code>.hgit</code></td>
-</tr>
-<tr>
-<td><code>.readme</code> <code>.guide</code></td>
-<td>Sends a readme and a guide links to the channel.</td>
-<td><code>.readme</code> or <code>.guide</code></td>
-</tr>
-<tr>
-<td><code>.donate</code></td>
-<td>Instructions for helping the project financially.</td>
-<td><code>.donate</code></td>
 </tr>
 </tbody>
 </table>
@@ -1465,7 +1251,7 @@ Version : 0.1
 </tr>
 <tr>
 <td><code>.permrole</code> <code>.pr</code></td>
-<td>Sets a role which can change permissions. Supply no parameters to see the current one. Default is 'Mashiro'.</td>
+<td>Sets a role which can change permissions. Supply no parameters to see the current one. Default is 'Sovonok'.</td>
 <td><code>.pr role</code></td>
 </tr>
 <tr>
@@ -1622,44 +1408,6 @@ Version : 0.1
 <td><code>.resetglobalperms</code></td>
 <td>Resets global permissions set by bot owner. <strong>Bot owner only</strong></td>
 <td><code>.resetglobalperms</code></td>
-</tr>
-</tbody>
-</table>
-
-<table class="highlight bordered">
-    <caption class="blue-text text-darken-2">Pokemon commands</caption>
-    <thead>
-    <tr>
-        <th>Command</th>
-        <th>Description</th>
-        <th>Example usage</th>
-    </tr>
-    </thead>
-<tbody>
-<tr>
-<td><code>.attack</code></td>
-<td>Attacks a target with the given move. Use <code>.movelist</code> to see a list of moves your type can use.</td>
-<td><code>.attack "vine whip" @someguy</code></td>
-</tr>
-<tr>
-<td><code>.movelist</code> <code>.ml</code></td>
-<td>Lists the moves you are able to use</td>
-<td><code>.ml</code></td>
-</tr>
-<tr>
-<td><code>.heal</code></td>
-<td>Heals someone. Revives those who fainted. Costs one Currency.</td>
-<td><code>.heal @someone</code></td>
-</tr>
-<tr>
-<td><code>.type</code></td>
-<td>Get the poketype of the target.</td>
-<td><code>.type @someone</code></td>
-</tr>
-<tr>
-<td><code>.settype</code></td>
-<td>Set your poketype. Costs one Currency. Provide no arguments to see a list of available types.</td>
-<td><code>.settype fire</code> or <code>.settype</code></td>
 </tr>
 </tbody>
 </table>
