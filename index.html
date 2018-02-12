@@ -152,535 +152,533 @@ Version : 0>>3
                 <div class="col s12 center">
                     
 <table class="highlight bordered">
-    <caption class="blue-text text-darken">Команды для Администратора</caption>
-	<caption class="blue-text text-darken">(Команды доступны только Администрации)</caption>
-	<caption class="blue-text text-darken">(Перевод команд ~> Google, мне было лень, простите!))</caption>
+    <caption class="blue-text text-darken-2">Administration commands</caption>
 <thead>
 <tr>
-<th>Команды и алиасы</th>
-<th>Описание</th>
-<th>Использование</th>
+<th>Command and aliases</th>
+<th>Description</th>
+<th>Usage</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>.delmsgoncmd</code></td>
-<td>Переключает автоматическое удаление успешную команду сообщение пользователя для предотвращения чат флудом. <strong>Требуется права "Администратор".</strong></td>
+<td>Toggles the automatic deletion of the user's successful command message to prevent chat flood. <strong>Requires Administrator server permission.</strong></td>
 <td><code>.delmsgoncmd</code></td>
 </tr>
 <tr>
 <td><code>.setrole</code> <code>.sr</code></td>
-<td>Наборы ролей для данного пользователя. <strong>Требует ManageRoles сервер разрешения.</strong></td>
+<td>Sets a role for a given user. <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.sr @User Guest</code></td>
 </tr>
 <tr>
 <td><code>.removerole</code> <code>.rr</code></td>
-<td>Удаляет роль из пользователь. <strong>Требует ManageRoles сервер разрешения.</strong></td>
+<td>Removes a role from a given user. <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.rr @User Admin</code></td>
 </tr>
 <tr>
 <td><code>.renamerole</code> <code>.renr</code></td>
-<td>Переименовывает свою роль. Роль переименовании должны быть ниже, чем высокий роль бота. <strong>Требует ManageRoles сервер разрешения.</strong></td>
+<td>Renames a role. The role you are renaming must be lower than bot's highest role. <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.renr "First role" SecondRole</code></td>
 </tr>
 <tr>
 <td><code>.removeallroles</code> <code>.rar</code></td>
-<td>Удаляет все роли из упомянутого пользователя. <strong>Требует ManageRoles сервер разрешения.</strong></td>
+<td>Removes all roles from a mentioned user. <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.rar @User</code></td>
 </tr>
 <tr>
 <td><code>.createrole</code> <code>.cr</code></td>
-<td>Создает роль с заданным именем. <strong>Требует ManageRoles сервер разрешения.</strong></td>
+<td>Creates a role with a given name. <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.cr Awesome Role</code></td>
 </tr>
 <tr>
 <td><code>.rolehoist</code> <code>.rh</code></td>
-<td>Переключает ли эта роль отображается в боковой панели или нет. <strong>Требует ManageRoles сервер разрешения.</strong></td>
-<td><code>.rh Guests</code> или <code>.rh "Space Wizards"</code></td>
+<td>Toggles whether this role is displayed in the sidebar or not. <strong>Requires ManageRoles server permission.</strong></td>
+<td><code>.rh Guests</code> or <code>.rh "Space Wizards"</code></td>
 </tr>
 <tr>
 <td><code>.rolecolor</code> <code>.roleclr</code></td>
-<td>Установить роль цвета в hex или 0-255 RGB-значение цвета, при условии. <strong>Требует ManageRoles сервер разрешения.</strong></td>
-<td><code>.roleclr Admin 255 200 100</code> или <code>.roleclr Admin ffba55</code></td>
+<td>Set a role's color to the hex or 0-255 rgb color value provided. <strong>Requires ManageRoles server permission.</strong></td>
+<td><code>.roleclr Admin 255 200 100</code> or <code>.roleclr Admin ffba55</code></td>
 </tr>
 <tr>
 <td><code>.deafen</code> <code>.deaf</code></td>
-<td>Оглушает указанных Пользователей или пользователями. <strong>Требует DeafenMembers сервер разрешения.</strong></td>
-<td><code>.deaf "@Someguy"</code> или <code>.deaf "@Someguy" "@Someguy"</code></td>
+<td>Deafens mentioned user or users. <strong>Requires DeafenMembers server permission.</strong></td>
+<td><code>.deaf "@Someguy"</code> or <code>.deaf "@Someguy" "@Someguy"</code></td>
 </tr>
 <tr>
 <td><code>.undeafen</code> <code>.undef</code></td>
-<td>Undeafens указанных Пользователей или пользователями. <strong>Требует DeafenMembers сервер разрешения.</strong></td>
-<td><code>.undef "@Someguy"</code> или <code>.undef "@Someguy" "@Someguy"</code></td>
+<td>Undeafens mentioned user or users. <strong>Requires DeafenMembers server permission.</strong></td>
+<td><code>.undef "@Someguy"</code> or <code>.undef "@Someguy" "@Someguy"</code></td>
 </tr>
 <tr>
 <td><code>.delvoichanl</code> <code>.dvch</code></td>
-<td>Удаление голосовой канал с заданным именем. <strong>Требует ManageChannels сервер разрешения.</strong></td>
+<td>Deletes a voice channel with a given name. <strong>Requires ManageChannels server permission.</strong></td>
 <td><code>.dvch VoiceChannelName</code></td>
 </tr>
 <tr>
 <td><code>.creatvoichanl</code> <code>.cvch</code></td>
-<td>Создает новый голосовой канал с заданным именем. <strong>Требует ManageChannels сервер разрешения.</strong></td>
+<td>Creates a new voice channel with a given name. <strong>Requires ManageChannels server permission.</strong></td>
 <td><code>.cvch VoiceChannelName</code></td>
 </tr>
 <tr>
 <td><code>.deltxtchanl</code> <code>.dtch</code></td>
-<td>Удаление текстового канала с данным именем. <strong>Требует ManageChannels сервер разрешения.</strong></td>
+<td>Deletes a text channel with a given name. <strong>Requires ManageChannels server permission.</strong></td>
 <td><code>.dtch TextChannelName</code></td>
 </tr>
 <tr>
 <td><code>.creatxtchanl</code> <code>.ctch</code></td>
-<td>Создает новый текстовый канал с заданным именем. <strong>Требует ManageChannels сервер разрешения.</strong></td>
+<td>Creates a new text channel with a given name. <strong>Requires ManageChannels server permission.</strong></td>
 <td><code>.ctch TextChannelName</code></td>
 </tr>
 <tr>
 <td><code>.settopic</code> <code>.st</code></td>
-<td>Задает тему на текущем канале. <strong>Требует ManageChannels сервер разрешения.</strong></td>
+<td>Sets a topic on the current channel. <strong>Requires ManageChannels server permission.</strong></td>
 <td><code>.st My new topic</code></td>
 </tr>
 <tr>
 <td><code>.setchanlname</code> <code>.schn</code></td>
-<td>Изменяет имя текущего канала. <strong>Требует ManageChannels сервер разрешения.</strong></td>
+<td>Changes the name of the current channel. <strong>Requires ManageChannels server permission.</strong></td>
 <td><code>.schn NewName</code></td>
 </tr>
 <tr>
 <td><code>.mentionrole</code> <code>.menro</code></td>
-<td>Упоминает каждый человек из представленных ролей или ролей (разделенных ',') на этом сервере. <strong>Требует MentionEveryone сервер разрешения.</strong></td>
+<td>Mentions every person from the provided role or roles (separated by a ',') on this server. <strong>Requires MentionEveryone server permission.</strong></td>
 <td><code>.menro RoleName</code></td>
 </tr>
 <tr>
 <td><code>.donators</code></td>
-<td>Список прекрасных людей, которые пожертвовали, чтобы сохранить этот проект.</td>
+<td>List of the lovely people who donated to keep this project alive.</td>
 <td><code>.donators</code></td>
 </tr>
 <tr>
 <td><code>.donadd</code></td>
-<td>Добавить донатора в базу данных. <strong>Только для Владельца</strong></td>
+<td>Add a donator to the database. <strong>Bot Owner Only</strong></td>
 <td><code>.donadd Donate Amount</code></td>
 </tr>
 <tr>
 <td><code>.autoassignrole</code> <code>.aar</code></td>
-<td>Автоматически присваивает определенной роли для каждого пользователя, который присоединяется к серверу. <strong>Требует ManageRoles сервер разрешения.</strong></td>
-<td><code>.aar to disable</code> или <code>.aar Role Name to enable</code></td>
+<td>Automaticaly assigns a specified role to every user who joins the server. <strong>Requires ManageRoles server permission.</strong></td>
+<td><code>.aar to disable</code> or <code>.aar Role Name to enable</code></td>
 </tr>
 <tr>
 <td><code>.execsql</code></td>
-<td>Выполняет команду SQL и возвращает количество затронутых строк. Опасно. <strong>Только для Владельца</strong></td>
+<td>Executes an sql command and returns the number of affected rows. Dangerous. <strong>Bot Owner Only</strong></td>
 <td><code>.execsql UPDATE Currency SET Amount=Amount+1234</code></td>
 </tr>
 <tr>
 <td><code>.deletewaifus</code></td>
-<td>Удаляет все из WaifuUpdates и таблиц WaifuInfo. <strong>Только для Владельца</strong></td>
+<td>Deletes everything from WaifuUpdates and WaifuInfo tables. <strong>Bot Owner Only</strong></td>
 <td><code>.deletewaifus</code></td>
 </tr>
 <tr>
 <td><code>.deletecurrency</code></td>
-<td>Удаляет все, начиная от валюты и CurrencyTransactions. <strong>Только для Владельца</strong></td>
+<td>Deletes everything from Currency and CurrencyTransactions. <strong>Bot Owner Only</strong></td>
 <td><code>.deletecurrency</code></td>
 </tr>
 <tr>
 <td><code>.deleteplaylists</code></td>
-<td>Удаляет все из MusicPlaylists. <strong>Только для Владельца</strong></td>
+<td>Deletes everything from MusicPlaylists. <strong>Bot Owner Only</strong></td>
 <td><code>.deleteplaylists</code></td>
 </tr>
 <tr>
 <td><code>.deleteexp</code></td>
-<td>deleteexp <strong>Только для Владельца</strong></td>
+<td>deleteexp <strong>Bot Owner Only</strong></td>
 <td><code>deleteexp</code></td>
 </tr>
 <tr>
 <td><code>.gvc</code></td>
-<td>Функция переключает игру голосовой канал в голосовом канале в данный момент. Пользователи, которые вступают в игру голосовой канал будет автоматически переадресовывается на голосовой канал с названием их текущую игру, если она существует. Не могу переместить пользователей в каналы что бот имеет разрешение Connect для. Одному на сервере. <strong>Требуется права "Администратор".</strong></td>
+<td>Toggles game voice channel feature in the voice channel you're currently in. Users who join the game voice channel will get automatically redirected to the voice channel with the name of their current game, if it exists. Can't move users to channels that the bot has no connect permission for. One per server. <strong>Requires Administrator server permission.</strong></td>
 <td><code>.gvc</code></td>
 </tr>
 <tr>
 <td><code>.languageset</code> <code>.langset</code></td>
-<td>Устанавливает для сервера язык ответ. Если строк ответ бота были переведены на этот язык, бот будет использовать этот язык в этом сервере. Сброс, используя <code>default</code> как имя локали. Предоставить никаких аргументов, чтобы выбрать язык.</td>
-<td><code>.langset de-DE</code> или <code>.langset default</code></td>
+<td>Sets this server's response language. If bot's response strings have been translated to that language, bot will use that language in this server. Reset by using <code>default</code> as the locale name. Provide no arguments to see currently set language.</td>
+<td><code>.langset de-DE</code> or <code>.langset default</code></td>
 </tr>
 <tr>
 <td><code>.langsetdefault</code> <code>.langsetd</code></td>
-<td>Наборы бота язык по умолчанию. Все сервера, которые используют локаль по умолчанию будет использовать это. Параметр, чтобы <code>default</code> использовать хозяина в текущей культуре. Предоставить никаких аргументов, чтобы выбрать язык.</td>
-<td><code>.langsetd en-US</code> или <code>.langsetd default</code></td>
+<td>Sets the bot's default response language. All servers which use a default locale will use this one. Setting to <code>default</code> will use the host's current culture. Provide no arguments to see currently set language.</td>
+<td><code>.langsetd en-US</code> or <code>.langsetd default</code></td>
 </tr>
 <tr>
 <td><code>.languageslist</code> <code>.langli</code></td>
-<td>Список языков для перевода (или его часть) существуют банкоматы.</td>
+<td>List of languages for which translation (or part of it) exist atm.</td>
 <td><code>.langli</code></td>
 </tr>
 <tr>
 <td><code>.logserver</code></td>
-<td>Включает или отключает все события журнала. Если включено, все события журнала будут входить в этот канал. <strong>Требуется права "Администратор".</strong> <strong>Владелец Бота Только</strong></td>
-<td><code>.logserver enable</code> или <code>.logserver disable</code></td>
+<td>Enables or Disables ALL log events. If enabled, all log events will log to this channel. <strong>Requires Administrator server permission.</strong> <strong>Bot Owner Only</strong></td>
+<td><code>.logserver enable</code> or <code>.logserver disable</code></td>
 </tr>
 <tr>
 <td><code>.logignore</code></td>
-<td>Переключает ли <code>.logserver</code> команда игнорирует этот канал. Полезно, если у вас есть скрытый канал администратор и общественный канал журнала. <strong>Требуется права "Администратор".</strong> <strong>Владелец Бота Только</strong></td>
+<td>Toggles whether the <code>.logserver</code> command ignores this channel. Useful if you have hidden admin channel and public log channel. <strong>Requires Administrator server permission.</strong> <strong>Bot Owner Only</strong></td>
 <td><code>.logignore</code></td>
 </tr>
 <tr>
 <td><code>.logevents</code></td>
-<td>Показывает список всех событий вы можете подписаться на С <code>.log</code> <strong>требует администратора сервера разрешения.</strong> <strong>Владелец Бота Только</strong></td>
+<td>Shows a list of all events you can subscribe to with <code>.log</code> <strong>Requires Administrator server permission.</strong> <strong>Bot Owner Only</strong></td>
 <td><code>.logevents</code></td>
 </tr>
 <tr>
 <td><code>.log</code></td>
-<td>Включает ведение журнала событий. Отключает его, если он активен в любом месте на сервере. Позволяет, если он не активный. Использовать <code>.logevents</code> , чтобы увидеть список всех событий вы можете подписаться на. <strong>Требуется права "Администратор".</strong> <strong>Владелец Бота Только</strong></td>
-<td><code>.log userpresence</code> или <code>.log userbanned</code></td>
+<td>Toggles logging event. Disables it if it is active anywhere on the server. Enables if it isn't active. Use <code>.logevents</code> to see a list of all events you can subscribe to. <strong>Requires Administrator server permission.</strong> <strong>Bot Owner Only</strong></td>
+<td><code>.log userpresence</code> or <code>.log userbanned</code></td>
 </tr>
 <tr>
 <td><code>.setmuterole</code></td>
-<td>Задает имя роли, которые будут назначены люди, которые должны быть приглушенными. По умолчанию Совёнок-немой. <strong>Требует ManageRoles сервер разрешения.</strong></td>
+<td>Sets a name of the role which will be assigned to people who should be muted. Default is mashiro-mute. <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.setmuterole Silenced</code></td>
 </tr>
 <tr>
 <td><code>.mute</code></td>
-<td>Отключает указанный пользователем как от разговора и общения. Вы можете также указать время в минутах (до 1440), как долго пользователь должен быть отключен. <strong>Требует ManageRoles сервер разрешения.</strong> <strong>Требует MuteMembers разрешение сервера.</strong></td>
-<td><code>.mute @Someone</code> или <code>.mute 30 @Someone</code></td>
+<td>Mutes a mentioned user both from speaking and chatting. You can also specify time in minutes (up to 1440) for how long the user should be muted. <strong>Requires ManageRoles server permission.</strong> <strong>Requires MuteMembers server permission.</strong></td>
+<td><code>.mute @Someone</code> or <code>.mute 30 @Someone</code></td>
 </tr>
 <tr>
 <td><code>.unmute</code></td>
-<td>Включение указанного пользователем ранее отключен с <code>.mute</code> командой. <strong>Требует ManageRoles сервер разрешения.</strong> <strong>Требует MuteMembers разрешение сервера.</strong></td>
+<td>Unmutes a mentioned user previously muted with <code>.mute</code> command. <strong>Requires ManageRoles server permission.</strong> <strong>Requires MuteMembers server permission.</strong></td>
 <td><code>.unmute @Someone</code></td>
 </tr>
 <tr>
 <td><code>.chatmute</code></td>
-<td>Предотвращает упомянутых пользователей от общения в текстовом каналы. <strong>Требует ManageRoles сервер разрешения.</strong></td>
+<td>Prevents a mentioned user from chatting in text channels. <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.chatmute @Someone</code></td>
 </tr>
 <tr>
 <td><code>.chatunmute</code></td>
-<td>Удаляет немая роль, ранее установленные на упомянутых пользователю <code>.chatmute</code> , который не позволял ему общения в текстовом каналы. <strong>Требует ManageRoles сервер разрешения.</strong></td>
+<td>Removes a mute role previously set on a mentioned user with <code>.chatmute</code> which prevented him from chatting in text channels. <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.chatunmute @Someone</code></td>
 </tr>
 <tr>
 <td><code>.voicemute</code></td>
-<td>Предотвращает упомянутых пользователей от общения в голосовых каналов. <strong>Требует MuteMembers сервер разрешения.</strong></td>
+<td>Prevents a mentioned user from speaking in voice channels. <strong>Requires MuteMembers server permission.</strong></td>
 <td><code>.voicemute @Someone</code></td>
 </tr>
 <tr>
 <td><code>.voiceunmute</code></td>
-<td>Дает ранее голос-приглушенный пользователей разрешение говорить. <strong>Требует MuteMembers сервер разрешения.</strong></td>
+<td>Gives a previously voice-muted user a permission to speak. <strong>Requires MuteMembers server permission.</strong></td>
 <td><code>.voiceunmute @Someguy</code></td>
 </tr>
 <tr>
 <td><code>.rotateplaying</code> <code>.ropl</code></td>
-<td>Переключает вращение игрового состояния динамической строки, которые вы ранее указали. <strong>Только для Владельца</strong></td>
+<td>Toggles rotation of playing status of the dynamic strings you previously specified. <strong>Bot Owner Only</strong></td>
 <td><code>.ropl</code></td>
 </tr>
 <tr>
 <td><code>.addplaying</code> <code>.adpl</code></td>
-<td>Добавляет указанную строку в список играющих строк, чтобы повернуть. Поддерживаемые заполнителей: <code>%servers%</code>, <code>%users%</code>, <code>%playing%</code>, <code>%queued%</code>, <code>%time%</code>, <code>%shardid%</code>, <code>%shardcount%</code>, <code>%shardguilds%</code>. <strong>Только для Владельца</strong></td>
+<td>Adds a specified string to the list of playing strings to rotate. Supported placeholders: <code>%servers%</code>, <code>%users%</code>, <code>%playing%</code>, <code>%queued%</code>, <code>%time%</code>, <code>%shardid%</code>, <code>%shardcount%</code>, <code>%shardguilds%</code>. <strong>Bot Owner Only</strong></td>
 <td><code>.adpl</code></td>
 </tr>
 <tr>
 <td><code>.listplaying</code> <code>.lipl</code></td>
-<td>Списки всех игровых статусов с соответствующим номером. <strong>Только для Владельца</strong></td>
+<td>Lists all playing statuses with their corresponding number. <strong>Bot Owner Only</strong></td>
 <td><code>.lipl</code></td>
 </tr>
 <tr>
 <td><code>.removeplaying</code> <code>.rmpl</code> <code>.repl</code></td>
-<td>Удаляет играя строки на заданное число. <strong>Только для Владельца</strong></td>
+<td>Removes a playing string on a given number. <strong>Bot Owner Only</strong></td>
 <td><code>.rmpl</code></td>
 </tr>
 <tr>
 <td><code>.prefix</code></td>
-<td>Задает префикс этот сервер для всех команд бота. Предоставить никаких аргументов, чтобы увидеть текущий префикс сервера.</td>
+<td>Sets this server's prefix for all bot commands. Provide no arguments to see the current server prefix.</td>
 <td><code>.prefix +</code></td>
 </tr>
 <tr>
 <td><code>.defprefix</code></td>
-<td>Задает префикс по умолчанию бот для всех команд бота. Предоставить никаких аргументов ознакомиться с текущим префиксом по умолчанию. Это не изменит текущего префикса данного сервера. <strong>Только для Владельца</strong></td>
+<td>Sets bot's default prefix for all bot commands. Provide no arguments to see the current default prefix. This will not change this server's current prefix. <strong>Bot Owner Only</strong></td>
 <td><code>.defprefix +</code></td>
 </tr>
 <tr>
 <td><code>.antiraid</code></td>
-<td>Наборы антирейдерской защиты на сервере. Первый аргумент-это количество людей, которое будет срабатывать защита. Второй-интервал времени, в котором это количество людей нужно объединиться для того, чтобы вызвать охрану, и третий аргумент-это наказание для тех людей (кик, бан, отключение звука) <strong>требует разрешение администратора сервера.</strong></td>
+<td>Sets an anti-raid protection on the server. First argument is number of people which will trigger the protection. Second one is a time interval in which that number of people needs to join in order to trigger the protection, and third argument is punishment for those people (Kick, Ban, Mute) <strong>Requires Administrator server permission.</strong></td>
 <td><code>.antiraid 5 20 Kick</code></td>
 </tr>
 <tr>
 <td><code>.antispam</code></td>
-<td>Останавливает людей от повторения одного сообщения х раз подряд. Вы можете указать либо немой, кикать или банить нарушителей. Если вы используете немой, вы можете добавить несколько секунд в конце, чтобы использовать синхронизированный звук. Максимум Сообщений 10. <strong>Требуется права "Администратор".</strong></td>
-<td><code>.antispam 3 Mute</code> или <code>.antispam 4 Kick</code> или <code>.antispam 6 Ban</code></td>
+<td>Stops people from repeating same message X times in a row. You can specify to either mute, kick or ban the offenders. If you're using mute, you can add a number of seconds at the end to use a timed mute. Max message count is 10. <strong>Requires Administrator server permission.</strong></td>
+<td><code>.antispam 3 Mute</code> or <code>.antispam 4 Kick</code> or <code>.antispam 6 Ban</code></td>
 </tr>
 <tr>
 <td><code>.antispamignore</code></td>
-<td>Переключает ли антиспам игнорирует текущего канала. Антиспам должен быть включен. <strong>Требуется права "Администратор".</strong></td>
+<td>Toggles whether antispam ignores current channel. Antispam must be enabled. <strong>Requires Administrator server permission.</strong></td>
 <td><code>.antispamignore</code></td>
 </tr>
 <tr>
 <td><code>.antilist</code> <code>.antilst</code></td>
-<td>В настоящее время функции защиты.</td>
+<td>Shows currently enabled protection features.</td>
 <td><code>.antilist</code></td>
 </tr>
 <tr>
 <td><code>.prune</code> <code>.clear</code></td>
-<td><code>.prune</code> удаляет все Масиро сообщения в последние 100 сообщений. <code>.prune X</code> удаляет последний <code>X</code> ряд сообщений из канала (до 100). <code>.prune @Someone</code> удаляет чьи-то сообщения в последние 100 сообщений. <code>.prune @Someone X</code> удаляет последний <code>X</code> ряд 'кто-то' сообщений в канале.</td>
-<td><code>.prune</code> или <code>.prune 5</code> или <code>.prune @Someone</code> или <code>.prune @Someone X</code></td>
+<td><code>.prune</code> removes all Mashiro's messages in the last 100 messages. <code>.prune X</code> removes last <code>X</code> number of messages from the channel (up to 100). <code>.prune @Someone</code> removes all Someone's messages in the last 100 messages. <code>.prune @Someone X</code> removes last <code>X</code> number of 'Someone's' messages in the channel.</td>
+<td><code>.prune</code> or <code>.prune 5</code> or <code>.prune @Someone</code> or <code>.prune @Someone X</code></td>
 </tr>
 <tr>
 <td><code>.slowmode</code></td>
-<td>Переключает slowmode. Отключить путем указания параметров. Чтобы включить, указать количество сообщений, которое пользователь может отправить и интервал в секундах. Например, 1 сообщение каждые 5 секунд. <strong>Требуется права "Управление Сообщениями".</strong></td>
-<td><code>.slowmode 1 5</code> или <code>.slowmode</code></td>
+<td>Toggles slowmode. Disable by specifying no parameters. To enable, specify a number of messages each user can send, and an interval in seconds. For example 1 message every 5 seconds. <strong>Requires ManageMessages server permission.</strong></td>
+<td><code>.slowmode 1 5</code> or <code>.slowmode</code></td>
 </tr>
 <tr>
 <td><code>.slowmodewl</code></td>
-<td>Игнорирует роль или пользователя из функция slowmode. <strong>Требуется права "Управление Сообщениями".</strong></td>
-<td><code>.slowmodewl SomeRole</code> или <code>.slowmodewl AdminDude</code></td>
+<td>Ignores a role or a user from the slowmode feature. <strong>Requires ManageMessages server permission.</strong></td>
+<td><code>.slowmodewl SomeRole</code> or <code>.slowmodewl AdminDude</code></td>
 </tr>
 <tr>
 <td><code>.adsarm</code></td>
-<td>Переключает автоматическое удаление подтверждений <code>.iam</code> и <code>.iamn</code> команд. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Toggles the automatic deletion of confirmations for <code>.iam</code> and <code>.iamn</code> commands. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.adsarm</code></td>
 </tr>
 <tr>
 <td><code>.asar</code></td>
-<td>Добавляет роль в список самостоятельно переназначить роли. Вы также можете указать группу. Если исключительно самостоятельно переназначить функции ролей включена, пользователи смогут выбрать одну роль в группе. <strong>Требует ManageRoles сервер разрешения.</strong></td>
-<td><code>.asar Gamer</code> или <code>.asar 1 Alliance</code> или <code>.asar 1 Horde</code></td>
+<td>Adds a role to the list of self-assignable roles. You can also specify a group. If 'Exclusive self-assignable roles' feature is enabled, users will be able to pick one role per group. <strong>Requires ManageRoles server permission.</strong></td>
+<td><code>.asar Gamer</code> or <code>.asar 1 Alliance</code> or <code>.asar 1 Horde</code></td>
 </tr>
 <tr>
 <td><code>.rsar</code></td>
-<td>Удаляет указанную роль из списка самостоятельно переназначить роли. <strong>Требует ManageRoles сервер разрешения.</strong></td>
+<td>Removes a specified role from the list of self-assignable roles. <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.rsar</code></td>
 </tr>
 <tr>
 <td><code>.lsar</code></td>
-<td>Перечислены все самостоятельно переназначить роли.</td>
+<td>Lists all self-assignable roles.</td>
 <td><code>.lsar</code></td>
 </tr>
 <tr>
 <td><code>.togglexclsar</code> <code>.tesar</code></td>
-<td>Переключает ли собственной роли, являются эксклюзивными. В то время как включена, пользователи могут иметь только один самостоятельно переназначить роли в группе. <strong>Требует ManageRoles сервер разрешения.</strong></td>
+<td>Toggles whether the self-assigned roles are exclusive. While enabled, users can only have one self-assignable role per group. <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.tesar</code></td>
 </tr>
 <tr>
 <td><code>.iam</code></td>
-<td>Добавляет роль, что вы выберете. Роли должны быть в списке самостоятельно переназначить роли.</td>
+<td>Adds a role to you that you choose. Role must be on a list of self-assignable roles.</td>
 <td><code>.iam Gamer</code></td>
 </tr>
 <tr>
 <td><code>.iamnot</code> <code>.iamn</code></td>
-<td>Удаляет указанную роль с вами. Роли должны быть в списке самостоятельно переназначить роли.</td>
+<td>Removes a specified role from you. Role must be on a list of self-assignable roles.</td>
 <td><code>.iamn Gamer</code></td>
 </tr>
 <tr>
 <td><code>.scadd</code></td>
-<td>Добавляет команду в список команд, которые будут выполняться автоматически в текущем канале, в порядке, они были добавлены в бота, когда он стартапов до. <strong>Только для Владельца</strong></td>
+<td>Adds a command to the list of commands which will be executed automatically in the current channel, in the order they were added in, by the bot when it startups up. <strong>Bot Owner Only</strong></td>
 <td><code>.scadd .stats</code></td>
 </tr>
 <tr>
 <td><code>.sclist</code></td>
-<td>Перечислены все команды в порядке их выполнения при запуске. <strong>Только для Владельца</strong></td>
+<td>Lists all startup commands in the order they will be executed in. <strong>Bot Owner Only</strong></td>
 <td><code>.sclist</code></td>
 </tr>
 <tr>
 <td><code>.wait</code></td>
-<td>Используется только в качестве команды запуска. Ждет определенное количество миллисекунд, прежде чем продолжить выполнение следующих команд запуска. <strong>Только для Владельца</strong></td>
+<td>Used only as a startup command. Waits a certain number of miliseconds before continuing the execution of the following startup commands. <strong>Bot Owner Only</strong></td>
 <td><code>.wait 3000</code></td>
 </tr>
 <tr>
 <td><code>.scrm</code></td>
-<td>Удаляет команду запуска с командной текста. <strong>Только для Владельца</strong></td>
+<td>Removes a startup command with the provided command text. <strong>Bot Owner Only</strong></td>
 <td><code>.scrm .stats</code></td>
 </tr>
 <tr>
 <td><code>.scclr</code></td>
-<td>Удаляет все команды запуска. <strong>Только для Владельца</strong></td>
+<td>Removes all startup commands. <strong>Bot Owner Only</strong></td>
 <td><code>.scclr</code></td>
 </tr>
 <tr>
 <td><code>.fwmsgs</code></td>
-<td>Переключает передачи не-команду сообщения, отправленные на бота ДМ с ботом владельцы <strong>Только для Владельца</strong></td>
+<td>Toggles forwarding of non-command messages sent to bot's DM to the bot owners <strong>Bot Owner Only</strong></td>
 <td><code>.fwmsgs</code></td>
 </tr>
 <tr>
 <td><code>.fwtoall</code></td>
-<td>Переключает ли сообщения, будет направлено всем владельцам бот или только на первый указанный в учетных данных.json-файла <strong>Только для Владельца</strong></td>
+<td>Toggles whether messages will be forwarded to all bot owners or only to the first one specified in the credentials.json file <strong>Bot Owner Only</strong></td>
 <td><code>.fwtoall</code></td>
 </tr>
 <tr>
 <td><code>.shardstats</code></td>
-<td>Статистика за черепки. Пронумерованных 25 черепков на каждой странице.</td>
-<td><code>.shardstats</code> или <code>.shardstats 2</code></td>
+<td>Stats for shards. Paginated with 25 shards per page.</td>
+<td><code>.shardstats</code> or <code>.shardstats 2</code></td>
 </tr>
 <tr>
 <td><code>.restartshard</code></td>
-<td>Попробуйте (пере)подключении сегментов с определенным shardid, когда он умирает. Никто не знает, будет ли он работать. Держите глаз на консоль на наличие ошибок. <strong>Только для Владельца</strong></td>
+<td>Try (re)connecting a shard with a certain shardid when it dies. No one knows will it work. Keep an eye on the console for errors. <strong>Bot Owner Only</strong></td>
 <td><code>.restartshard 2</code></td>
 </tr>
 <tr>
 <td><code>.leave</code></td>
-<td>Делает Совёнок покинуть сервер. Требуется либо имя сервера или ID сервера. <strong>Только для Владельца</strong></td>
+<td>Makes Mashiro leave the server. Either server name or server ID is required. <strong>Bot Owner Only</strong></td>
 <td><code>.leave 123123123331</code></td>
 </tr>
 <tr>
 <td><code>.die</code></td>
-<td>Закрывает бот вниз. <strong>Только для Владельца</strong></td>
+<td>Shuts the bot down. <strong>Bot Owner Only</strong></td>
 <td><code>.die</code></td>
 </tr>
 <tr>
 <td><code>.restart</code></td>
-<td>Перезапускает бота. Может не работать. <strong>Только для Владельца</strong></td>
+<td>Restarts the bot. Might not work. <strong>Bot Owner Only</strong></td>
 <td><code>.restart</code></td>
 </tr>
 <tr>
 <td><code>.setname</code> <code>.newnm</code></td>
-<td>Дает бот новое имя. <strong>Только для Владельца</strong></td>
+<td>Gives the bot a new name. <strong>Bot Owner Only</strong></td>
 <td><code>.newnm BotName</code></td>
 </tr>
 <tr>
 <td><code>.setnick</code></td>
-<td>Меняет ник бота на этот сервер. Вы также можете ориентироваться на других пользователей, чтобы изменить свой ник. <strong>Требует ManageNicknames сервер разрешения.</strong></td>
-<td><code>.setnick BotNickname</code> или <code>.setnick @SomeUser New Nickname</code></td>
+<td>Changes the nickname of the bot on this server. You can also target other users to change their nickname. <strong>Requires ManageNicknames server permission.</strong></td>
+<td><code>.setnick BotNickname</code> or <code>.setnick @SomeUser New Nickname</code></td>
 </tr>
 <tr>
 <td><code>.setstatus</code></td>
-<td>Устанавливает статус бота. (Онлайн/Простоя/Днр/Невидимый) <strong>Только для Владельца</strong></td>
+<td>Sets the bot's status. (Online/Idle/Dnd/Invisible) <strong>Bot Owner Only</strong></td>
 <td><code>.setstatus Idle</code></td>
 </tr>
 <tr>
 <td><code>.setavatar</code> <code>.setav</code></td>
-<td>Устанавливает новый аватар для MashiroBot. Аргумент-это прямая ссылка на изображение. <strong>Только для Владельца</strong></td>
+<td>Sets a new avatar image for the MashiroBot. Argument is a direct link to an image. <strong>Bot Owner Only</strong></td>
 <td><code>.setav http://i.imgur.com/xTG3a1I.jpg</code></td>
 </tr>
 <tr>
 <td><code>.setgame</code></td>
-<td>Устанавливает игру с ботами. <strong>Только для Владельца</strong></td>
+<td>Sets the bots game. <strong>Bot Owner Only</strong></td>
 <td><code>.setgame with snakes</code></td>
 </tr>
 <tr>
 <td><code>.setstream</code></td>
-<td>Наборы поток ботов. Первый аргумент-это ссылка на twitch, второй аргумент-имя потока. <strong>Только для Владельца</strong></td>
+<td>Sets the bots stream. First argument is the twitch link, second argument is stream name. <strong>Bot Owner Only</strong></td>
 <td><code>.setstream TWITCHLINK Hello</code></td>
 </tr>
 <tr>
 <td><code>.send</code></td>
-<td>Отправляет сообщение кому-то на другой сервер через бота. Отдельного сервера и канала/ID пользователей с <code>|</code> и префикс канала идентификатор <code>c:</code> и идентификатор пользователя с <code>u:</code>. <strong>Только для Владельца</strong></td>
-<td><code>.send serverid|c:channelid message</code> или <code>.send serverid|u:userid message</code></td>
+<td>Sends a message to someone on a different server through the bot.  Separate server and channel/user ids with <code>|</code> and prefix the channel id with <code>c:</code> and the user id with <code>u:</code>. <strong>Bot Owner Only</strong></td>
+<td><code>.send serverid|c:channelid message</code> or <code>.send serverid|u:userid message</code></td>
 </tr>
 <tr>
 <td><code>.reloadimages</code></td>
-<td>Повторная загрузка изображений бот использует. Безопасен для использования даже тогда, когда бот активно используется. <strong>Только для Владельца</strong></td>
+<td>Reloads images bot is using. Safe to use even when bot is being used heavily. <strong>Bot Owner Only</strong></td>
 <td><code>.reloadimages</code></td>
 </tr>
 <tr>
 <td><code>.greetdel</code> <code>.grdel</code></td>
-<td>Задает время (в секундах) для приветственные сообщения будут автоматически удалены. Установите его в 0, чтобы отключить автоматическое удаление. <strong>Требуется права "Управление сервером".</strong></td>
-<td><code>.greetdel 0</code> или <code>.greetdel 30</code></td>
+<td>Sets the time it takes (in seconds) for greet messages to be auto-deleted. Set it to 0 to disable automatic deletion. <strong>Requires ManageServer server permission.</strong></td>
+<td><code>.greetdel 0</code> or <code>.greetdel 30</code></td>
 </tr>
 <tr>
 <td><code>.greet</code></td>
-<td>Переключает anouncements на текущем канале, когда кто-то присоединяется к серверу. <strong>Требуется права "Управление сервером".</strong></td>
+<td>Toggles anouncements on the current channel when someone joins the server. <strong>Requires ManageServer server permission.</strong></td>
 <td><code>.greet</code></td>
 </tr>
 <tr>
 <td><code>.greetmsg</code></td>
-<td>Устанавливает новый вступить объявление, сообщение, которое будет показано на канале сервера. Типа <code>%user%</code> если вы хотите отметить новый член. Используя его сообщение не будет показывать приветственное сообщение. <strong>Требуется права "Управление сервером".</strong></td>
+<td>Sets a new join announcement message which will be shown in the server's channel. Type <code>%user%</code> if you want to mention the new member. Using it with no message will show the current greet message. You can use embed json from <a href="http://mbot.gachi.ru/embedbuilder/">http://mbot.gachi.ru/embedbuilder/</a> instead of a regular text, if you want the message to be embedded. <strong>Requires ManageServer server permission.</strong></td>
 <td><code>.greetmsg Welcome, %user%.</code></td>
 </tr>
 <tr>
 <td><code>.greetdm</code></td>
-<td>Переключает ли приветственные сообщения будут отправлены в ДМ (это отдельно от здороваются - вы можете иметь оба, или не активирована). <strong>Требуется права "Управление сервером".</strong></td>
+<td>Toggles whether the greet messages will be sent in a DM (This is separate from greet - you can have both, any or neither enabled). <strong>Requires ManageServer server permission.</strong></td>
 <td><code>.greetdm</code></td>
 </tr>
 <tr>
 <td><code>.greetdmmsg</code></td>
-<td>Устанавливает новый присоединиться анонс сообщения, которое будет отправлено пользователю, который присоединился. Типа <code>%user%</code> если вы хотите отметить новый член. Используя его сообщения не будут показывать текущее сообщение ДМ приветствовать. <strong>Требуется права "Управление сервером".</strong></td>
+<td>Sets a new join announcement message which will be sent to the user who joined. Type <code>%user%</code> if you want to mention the new member. Using it with no message will show the current DM greet message. You can use embed json from <a href="http://mbot.gachi.ru/embedbuilder/">http://mbot.gachi.ru/embedbuilder/</a> instead of a regular text, if you want the message to be embedded. <strong>Requires ManageServer server permission.</strong></td>
 <td><code>.greetdmmsg Welcome to the server, %user%</code></td>
 </tr>
 <tr>
 <td><code>.bye</code></td>
-<td>Переключает anouncements на текущем канале, когда кто-то покидает сервер. <strong>Требуется права "Управление сервером".</strong></td>
+<td>Toggles anouncements on the current channel when someone leaves the server. <strong>Requires ManageServer server permission.</strong></td>
 <td><code>.bye</code></td>
 </tr>
 <tr>
 <td><code>.byemsg</code></td>
-<td>Устанавливает новый Оставить сообщение объявления. Типа <code>%user%</code> , если вы хотите, чтобы отобразить имя пользователя, который оставил. Типа <code>%id%</code> показать удостоверение. Используя эту команду без сообщения будут показывать текущее сообщением bye. <strong>Требуется права "Управление сервером".</strong></td>
+<td>Sets a new leave announcement message. Type <code>%user%</code> if you want to show the name the user who left. Type <code>%id%</code> to show id. Using this command with no message will show the current bye message. You can use embed json from <a href="http://mbot.gachi.ru/embedbuilder/">http://mbot.gachi.ru/embedbuilder/</a> instead of a regular text, if you want the message to be embedded. <strong>Requires ManageServer server permission.</strong></td>
 <td><code>.byemsg %user% has left.</code></td>
 </tr>
 <tr>
 <td><code>.byedel</code></td>
-<td>Задает время (в секундах), пока сообщения будут автоматически удалены. Установите его, чтобы <code>0</code> отключить автоматическое удаление. <strong>Требуется права "Управление сервером".</strong></td>
-<td><code>.byedel 0</code> или <code>.byedel 30</code></td>
+<td>Sets the time it takes (in seconds) for bye messages to be auto-deleted. Set it to <code>0</code> to disable automatic deletion. <strong>Requires ManageServer server permission.</strong></td>
+<td><code>.byedel 0</code> or <code>.byedel 30</code></td>
 </tr>
 <tr>
 <td><code>.timezones</code></td>
-<td>Представлены все временные зоны доступны в системе для использования с <code>.timezone</code>.</td>
+<td>Lists all timezones available on the system to be used with <code>.timezone</code>.</td>
 <td><code>.timezones</code></td>
 </tr>
 <tr>
 <td><code>.timezone</code></td>
-<td>Наборы этой гильдии пояс. Это влияет на выход бота времени на этом сервере (логи и т. д.)</td>
-<td><code>.timezone</code> или <code>.timezone GMT Standard Time</code></td>
+<td>Sets this guilds timezone. This affects bot's time output in this server (logs, etc..)</td>
+<td><code>.timezone</code> or <code>.timezone GMT Standard Time</code></td>
 </tr>
 <tr>
 <td><code>.warn</code></td>
-<td>Предупреждает пользователя. <strong>Требует BanMembers сервер разрешения.</strong></td>
+<td>Warns a user. <strong>Requires BanMembers server permission.</strong></td>
 <td><code>.warn @b1nzy Very rude person</code></td>
 </tr>
 <tr>
 <td><code>.warnlog</code></td>
-<td>Просмотреть список предупреждений конкретного пользователя. <strong>Требует BanMembers сервер разрешения.</strong></td>
+<td>See a list of warnings of a certain user. <strong>Requires BanMembers server permission.</strong></td>
 <td><code>.warnlog @b1nzy</code></td>
 </tr>
 <tr>
 <td><code>.warnlogall</code></td>
-<td>Посмотреть список всех предупреждений на сервере. 15 пользователей на странице. <strong>Требует BanMembers сервер разрешения.</strong></td>
-<td><code>.warnlogall</code> или <code>.warnlogall 2</code></td>
+<td>See a list of all warnings on the server. 15 users per page. <strong>Requires BanMembers server permission.</strong></td>
+<td><code>.warnlogall</code> or <code>.warnlogall 2</code></td>
 </tr>
 <tr>
 <td><code>.warnclear</code> <code>.warnc</code></td>
-<td>Очищает все предупреждения от определенных пользователей. <strong>Требует BanMembers сервер разрешения.</strong></td>
+<td>Clears all warnings from a certain user. <strong>Requires BanMembers server permission.</strong></td>
 <td><code>.warnclear @PoorDude</code></td>
 </tr>
 <tr>
 <td><code>.warnpunish</code> <code>.warnp</code></td>
-<td>Устанавливает наказания за определенное количество предупреждений. Обеспечить никакого наказания для удаления. <strong>Требует BanMembers сервер разрешения.</strong></td>
-<td><code>.warnpunish 5 Ban</code> или <code>.warnpunish 3</code></td>
+<td>Sets a punishment for a certain number of warnings. Provide no punishment to remove. <strong>Requires BanMembers server permission.</strong></td>
+<td><code>.warnpunish 5 Ban</code> or <code>.warnpunish 3</code></td>
 </tr>
 <tr>
 <td><code>.warnpunishlist</code> <code>.warnpl</code></td>
-<td>Список наказаний для предупреждения.</td>
+<td>Lists punishments for warnings.</td>
 <td><code>.warnpunishlist</code></td>
 </tr>
 <tr>
 <td><code>.ban</code> <code>.b</code></td>
-<td>Банит пользователя по ID или по имени с необязательным сообщением. <strong>Требует BanMembers сервер разрешения.</strong></td>
+<td>Bans a user by ID or name with an optional message. <strong>Requires BanMembers server permission.</strong></td>
 <td><code>.b "@some Guy" Your behaviour is toxic.</code></td>
 </tr>
 <tr>
 <td><code>.unban</code></td>
-<td>Unbans пользователь с указанным пользователя#discrim или ID. <strong>Требует BanMembers сервер разрешения.</strong></td>
-<td><code>.unban kwoth#1234</code> или <code>.unban 123123123</code></td>
+<td>Unbans a user with the provided user#discrim or id. <strong>Requires BanMembers server permission.</strong></td>
+<td><code>.unban kwoth#1234</code> or <code>.unban 123123123</code></td>
 </tr>
 <tr>
 <td><code>.softban</code> <code>.sb</code></td>
-<td>Банит и потом unbans пользователя по ID или по имени с необязательным сообщением. <strong>Требует KickMembers сервер разрешения.</strong> <strong>Требует ManageMessages разрешение сервера.</strong></td>
+<td>Bans and then unbans a user by ID or name with an optional message. <strong>Requires KickMembers server permission.</strong> <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.sb "@some Guy" Your behaviour is toxic.</code></td>
 </tr>
 <tr>
 <td><code>.kick</code> <code>.k</code></td>
-<td>Ногами упомянутых пользователей. <strong>Требует KickMembers сервер разрешения.</strong></td>
+<td>Kicks a mentioned user. <strong>Requires KickMembers server permission.</strong></td>
 <td><code>.k "@some Guy" Your behaviour is toxic.</code></td>
 </tr>
 <tr>
 <td><code>.vcrole</code></td>
-<td>Устанавливает или сбрасывает роль, которая будет предоставлена для пользователей, которые присоединяются к голосовой канал вы при выполнении этой команды. Обеспечивают никакой роли имя, чтобы отключить. Вы должны быть в голосовой канал для выполнения этой команды. <strong>Требует ManageRoles сервер разрешения.</strong> <strong>Требует ManageChannels разрешение сервера.</strong></td>
-<td><code>.vcrole SomeRole</code> или <code>.vcrole</code></td>
+<td>Sets or resets a role which will be given to users who join the voice channel you're in when you run this command. Provide no role name to disable. You must be in a voice channel to run this command. <strong>Requires ManageRoles server permission.</strong> <strong>Requires ManageChannels server permission.</strong></td>
+<td><code>.vcrole SomeRole</code> or <code>.vcrole</code></td>
 </tr>
 <tr>
 <td><code>.vcrolelist</code></td>
-<td>Показывает список в настоящее время набор голосовых функций канала.</td>
+<td>Shows a list of currently set voice channel roles.</td>
 <td><code>.vcrolelist</code></td>
 </tr>
 <tr>
 <td><code>.voice+text</code> <code>.v+t</code></td>
-<td>Создает текстовый канал для каждого голосового канала только, что голосовой канал вижу. Если вы владелец сервера, имейте в виду, вы будете видеть их все время, независимо от. <strong>Требует ManageRoles сервер разрешения.</strong> <strong>Требует ManageChannels разрешение сервера.</strong></td>
+<td>Creates a text channel for each voice channel only users in that voice channel can see. If you are server owner, keep in mind you will see them all the time regardless. <strong>Requires ManageRoles server permission.</strong> <strong>Requires ManageChannels server permission.</strong></td>
 <td><code>.v+t</code></td>
 </tr>
 <tr>
 <td><code>.cleanvplust</code> <code>.cv+t</code></td>
-<td>Удаляет весь текст, заканчивающийся в каналы <code>-voice</code> , по которым voicechannels не найдены. Используйте на свой страх и риск. <strong>Требует ManageChannels сервер разрешения.</strong> <strong>Требует ManageRoles разрешение сервера.</strong></td>
+<td>Deletes all text channels ending in <code>-voice</code> for which voicechannels are not found. Use at your own risk. <strong>Requires ManageChannels server permission.</strong> <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.cleanv+t</code></td>
 </tr>
 </tbody>
@@ -690,1350 +688,1558 @@ Version : 0.1
 -->
 
 <table class="highlight bordered">
-    <caption class="blue-text text-darken-2">Пользовательские реакции команды</caption>
+    <caption class="blue-text text-darken-2">Custom Reactions commands</caption>
 <thead>
 <tr>
-<th>Команды и алиасы</th>
-<th>Описание</th>
-<th>Использование</th>
+<th>Commands and aliases</th>
+<th>Description</th>
+<th>Usage</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>.addcustreact</code> <code>.acr</code></td>
-<td>Добавить пользовательскую реакцию с триггером и ответ. Выполнив эту команду в сервер, требуется разрешение Администрации. Выполнение этой команды при СД является владельцем бота только и добавляет новую глобальную пользовательскую реакцию.</td>
+<td>Add a custom reaction with a trigger and a response. Running this command in server requires the Administration permission. Running this command in DM is Bot Owner only and adds a new global custom reaction.</td>
 <td><code>.acr "hello" Hi there %user%</code></td>
 </tr>
 <tr>
 <td><code>.editcustreact</code> <code>.ecr</code></td>
-<td>Редактирование ответа пользовательской реакции дал его ID.</td>
+<td>Edits the custom reaction's response given its ID.</td>
 <td><code>.ecr 123 I'm a magical girl</code></td>
 </tr>
 <tr>
 <td><code>.listcustreact</code> <code>.lcr</code></td>
-<td>Списки глобальных или нестандартной реакции сервера (20 команд за страницу). Выполнив команду в ДМ будет список глобальных пользовательских реакций, при запуске сервер будет списка пользовательских реакций этого сервера. Указание <code>all</code> аргумента вместо числа ДМ вам текстовый файл со списком всех пользовательских реакций.</td>
-<td><code>.lcr 1</code> или <code>.lcr all</code></td>
+<td>Lists global or server custom reactions (20 commands per page). Running the command in DM will list global custom reactions, while running it in server will list that server's custom reactions. Specifying <code>all</code> argument instead of the number will DM you a text file with a list of all custom reactions.</td>
+<td><code>.lcr 1</code> or <code>.lcr all</code></td>
 </tr>
 <tr>
 <td><code>.listcustreactg</code> <code>.lcrg</code></td>
-<td>Перечислены глобальные и пользовательские реакции сервера (20 команд на каждую страницу), сгруппированные по курок, и показывают Количество ответов для каждого. Выполнив команду в ДМ будет список глобальных пользовательских реакций, при запуске сервер будет списка пользовательских реакций этого сервера.</td>
+<td>Lists global or server custom reactions (20 commands per page) grouped by trigger, and show a number of responses for each. Running the command in DM will list global custom reactions, while running it in server will list that server's custom reactions.</td>
 <td><code>.lcrg 1</code></td>
 </tr>
 <tr>
 <td><code>.showcustreact</code> <code>.scr</code></td>
-<td>Показывает ответ пользовательской реакции на данного идентификатора.</td>
+<td>Shows a custom reaction's response on a given ID.</td>
 <td><code>.scr 1</code></td>
 </tr>
 <tr>
 <td><code>.delcustreact</code> <code>.dcr</code></td>
-<td>Удаляет пользовательскую реакцию на определенный индекс. Если забежала в ДМ, что он является собственником бот и удаляет глобальных пользовательских реакции. Если побежал в сервер, требует административных привилегий и удаляет сервер пользовательская реакция.</td>
+<td>Deletes a custom reaction on a specific index. If ran in DM, it is bot owner only and deletes a global custom reaction. If ran in a server, it requires Administration privileges and removes server custom reaction.</td>
 <td><code>.dcr 5</code></td>
 </tr>
 <tr>
 <td><code>.crca</code></td>
-<td>Переключает ли нестандартная реакция сработает, если пусковым сообщение содержит ключевое слово (а не только начиная с него).</td>
+<td>Toggles whether the custom reaction will trigger if the triggering message contains the keyword (instead of only starting with it).</td>
 <td><code>.crca 44</code></td>
 </tr>
 <tr>
 <td><code>.crdm</code></td>
-<td>Переключает ли сообщение ответ пользовательских реакция будет отправлен как личное сообщение.</td>
+<td>Toggles whether the response message of the custom reaction will be sent as a direct message.</td>
 <td><code>.crdm 44</code></td>
 </tr>
 <tr>
 <td><code>.crad</code></td>
-<td>Переключает ли сообщение запуска пользовательской реакции будут автоматически удаляться.</td>
+<td>Toggles whether the message triggering the custom reaction will be automatically deleted.</td>
 <td><code>.crad 59</code></td>
 </tr>
 <tr>
 <td><code>.crstatsclear</code></td>
-<td>Сброс счетчиков на <code>.crstats</code>. Вы можете задать триггер, чтобы очистить статистику только для этого триггера. <strong>Только для Владельца</strong></td>
-<td><code>.crstatsclear</code> или <code>.crstatsclear rng</code></td>
+<td>Resets the counters on <code>.crstats</code>. You can specify a trigger to clear stats only for that trigger. <strong>Bot owner only</strong></td>
+<td><code>.crstatsclear</code> or <code>.crstatsclear rng</code></td>
 </tr>
 <tr>
 <td><code>.crstats</code></td>
-<td>Показывает список пользовательских реакций и количество раз, которое они были выполнены. С разбивкой на страницы по 10 на каждой странице. Использовать <code>.crstatsclear</code> для сброса счетчиков.</td>
-<td><code>.crstats</code> или <code>.crstats 3</code></td>
+<td>Shows a list of custom reactions and the number of times they have been executed. Paginated with 10 per page. Use <code>.crstatsclear</code> to reset the counters.</td>
+<td><code>.crstats</code> or <code>.crstats 3</code></td>
 </tr>
 </tbody>
 </table>
 <table class="highlight bordered">
-    <caption class="blue-text text-darken-2">Азартные игры команды</caption>
+    <caption class="blue-text text-darken-2">Gambling commands</caption>
 <thead>
 <tr>
-<th>Команды и алиасы</th>
-<th>Описание</th>
-<th>Использование</th>
+<th>Commands and aliases</th>
+<th>Description</th>
+<th>Usage</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>.timely</code></td>
-<td>Использовать, чтобы требовать вашего "своевременных" валюты. Владелец бота должен указать сумму и срок, как часто Вы можете претендовать в вашей валюте.</td>
+<td>Use to claim your 'timely' currency. Bot owner has to specify the amount and the period on how often you can claim your currency.</td>
 <td><code>.timely</code></td>
 </tr>
 <tr>
 <td><code>.timelyreset</code></td>
-<td>Сбрасывает все пользовательские ожидания на <code>.timely</code> команду. <strong>Только для Владельца</strong></td>
+<td>Resets all user timeouts on <code>.timely</code> command. <strong>Bot owner only</strong></td>
 <td><code>.timelyreset</code></td>
 </tr>
 <tr>
 <td><code>.timelyset</code></td>
-<td>Устанавливает 'своевременная' валютная сумма пособия для пользователей. Второй аргумент-это период в часах, по умолчанию составляет 24 часа. <strong>Только для Владельца</strong></td>
-<td><code>.timelyset 100</code> или <code>.timelyset 50 12</code></td>
+<td>Sets the 'timely' currency allowance amount for users. Second argument is period in hours, default is 24 hours. <strong>Bot owner only</strong></td>
+<td><code>.timelyset 100</code> or <code>.timelyset 50 12</code></td>
 </tr>
 <tr>
 <td><code>.raffle</code></td>
-<td>Печатает имя и идентификатор случайных пользователей от сервера или От пользователя с определенной ролью.</td>
-<td><code>.raffle</code> или <code>.raffle RoleName</code></td>
+<td>Prints a name and ID of a random online user from the server, or from the online user in the specified role.</td>
+<td><code>.raffle</code> or <code>.raffle RoleName</code></td>
 </tr>
 <tr>
 <td><code>.raffleany</code></td>
-<td>Печатает имя и идентификатор случайного пользователя с сервера, или с определенной ролью.</td>
-<td><code>.raffleany</code> или <code>.raffleany  RoleName</code></td>
+<td>Prints a name and ID of a random user from the server, or from the specified role.</td>
+<td><code>.raffleany</code> or <code>.raffleany  RoleName</code></td>
 </tr>
 <tr>
 <td><code>.$</code> <code>.currency</code> <code>.$$</code> <code>.$$$</code> <code>.cash</code> <code>.cur</code></td>
-<td>Проверить, сколько валюты у человека. (По умолчанию для себя)</td>
-<td><code>.$</code> или <code>.$ @SomeGuy</code></td>
+<td>Check how much currency a person has. (Defaults to yourself)</td>
+<td><code>.$</code> or <code>.$ @SomeGuy</code></td>
 </tr>
 <tr>
 <td><code>.give</code></td>
-<td>Дать кому-то определенной суммы валюты.</td>
+<td>Give someone a certain amount of currency.</td>
 <td><code>.give 1 @SomeGuy</code></td>
 </tr>
 <tr>
 <td><code>.award</code></td>
-<td>Награды, кому-то определенной суммы валюты. Вы также можете указать имя роли валютного награда для всех пользователей в роль. <strong>Только для Владельца</strong></td>
-<td><code>.award 100 @person</code> или <code>.award 5 Role Of Gamblers</code></td>
+<td>Awards someone a certain amount of currency.  You can also specify a role name to award currency to all users in a role. <strong>Bot owner only</strong></td>
+<td><code>.award 100 @person</code> or <code>.award 5 Role Of Gamblers</code></td>
 </tr>
 <tr>
 <td><code>.take</code></td>
-<td>Занимает определенное количество валюты от кого-то. <strong>Только для Владельца</strong></td>
+<td>Takes a certain amount of currency from someone. <strong>Bot owner only</strong></td>
 <td><code>.take 1 @SomeGuy</code></td>
 </tr>
 <tr>
 <td><code>.rollduel</code></td>
-<td>Бросать вызов кого-то на дуэль крен, определяя размер и пользователя, которому вы хотите бросить вызов в качестве параметров. Чтобы принять вызов, просто укажите имя пользователя, которому вы бросили вызов, без суммы.</td>
-<td><code>.rollduel 50 @SomeGuy</code> или <code>.rollduel @Challenger</code></td>
+<td>Challenge someone to a roll duel by specifying the amount and the user you wish to challenge as the parameters. To accept the challenge, just specify the name of the user who challenged you, without the amount.</td>
+<td><code>.rollduel 50 @SomeGuy</code> or <code>.rollduel @Challenger</code></td>
 </tr>
 <tr>
 <td><code>.betroll</code> <code>.br</code></td>
-<td>Ставки на определенную сумму валюты и бросает кости. Переваливаясь 66 дает х2 вашей валюты, более 90 - 100 х4 и х10.</td>
+<td>Bets a certain amount of currency and rolls a dice. Rolling over 66 yields x2 of your currency, over 90 - x4 and 100 x10.</td>
 <td><code>.br 5</code></td>
 </tr>
 <tr>
 <td><code>.leaderboard</code> <code>.lb</code></td>
-<td>Показывает бота валюте лидеров.</td>
+<td>Displays the bot's currency leaderboard.</td>
 <td><code>.lb</code></td>
 </tr>
 <tr>
 <td><code>.race</code></td>
-<td>Начинается новое животное раса.</td>
+<td>Starts a new animal race.</td>
 <td><code>.race</code></td>
 </tr>
 <tr>
 <td><code>.joinrace</code> <code>.jr</code></td>
-<td>Присоединяется к новой гонке. Вы можете указать сумму валюты для ставок (опционально). Вы получите YourBet*(участники-1) обратно, если вы выиграете.</td>
-<td><code>.jr</code> или <code>.jr 5</code></td>
+<td>Joins a new race. You can specify an amount of currency for betting (optional). You will get YourBet*(participants-1) back if you win.</td>
+<td><code>.jr</code> or <code>.jr 5</code></td>
 </tr>
 <tr>
 <td><code>.startevent</code></td>
-<td>Начинается одно из событий можно увидеть на общественном Совёнок. <code>reaction</code> и <code>sneakygamestatus</code> только 2 доступен уже сейчас. <strong>Только для Владельца</strong></td>
+<td>Starts one of the events seen on public mashiro. <code>reaction</code> and <code>sneakygamestatus</code> are the only 2 available now. <strong>Bot owner only</strong></td>
 <td><code>.startevent reaction</code></td>
 </tr>
 <tr>
 <td><code>.rafflecur</code></td>
-<td>Начинается или присоединяется валютная лотерея с указанной суммы. Пользователи, которые вступают в розыгрыш потеряет сумму, указанную в валюте и добавить его в кастрюлю. После 30 секунд, случайным образом будет выбран победитель, который получит весь банк. Существует также <code>mixed</code> режим, в котором пользователи будут иметь возможность вступить в игру с любым количеством валюты, и их шансы быть пропорциональна количеству они сделали ставку.</td>
-<td><code>.rafflecur 20</code> или <code>.rafflecur mixed 15</code></td>
+<td>Starts or joins a currency raffle with a specified amount. Users who join the raffle will lose the amount of currency specified and add it to the pot. After 30 seconds, random winner will be selected who will receive the whole pot. There is also a <code>mixed</code> mode in which the users will be able to join the game with any amount of currency, and have their chances be proportional to the amount they've bet.</td>
+<td><code>.rafflecur 20</code> or <code>.rafflecur mixed 15</code></td>
 </tr>
 <tr>
 <td><code>.roll</code></td>
-<td>Роллы 0-100. Если вы предоставите номер <code>X</code> он подкатывает к 30 нормальные плашки. Если вы разделяете 2 номера с буквой <code>d</code> (<code>xdy</code>) это рулон <code>X</code> кости от 1 до <code>y</code>. <code>Y</code> может быть буква " Е " если вы хотите ролл судьбу кости вместо ДНД.</td>
-<td><code>.roll</code> или <code>.roll 7</code> или <code>.roll 3d5</code> или <code>.roll 5dF</code></td>
+<td>Rolls 0-100. If you supply a number <code>X</code> it rolls up to 30 normal dice. If you split 2 numbers with letter <code>d</code> (<code>xdy</code>) it will roll <code>X</code> dice from 1 to <code>y</code>. <code>Y</code> can be a letter 'F' if you want to roll fate dice instead of dnd.</td>
+<td><code>.roll</code> or <code>.roll 7</code> or <code>.roll 3d5</code> or <code>.roll 5dF</code></td>
 </tr>
 <tr>
 <td><code>.rolluo</code></td>
-<td>Роллы <code>X</code> нормальные плашки (до 30) неупорядоченный. Если вы разделяете 2 номера с буквой <code>d</code> (<code>xdy</code>) это рулон <code>X</code> кости от 1 до <code>y</code>.</td>
-<td><code>.rolluo</code> или <code>.rolluo 7</code> или <code>.rolluo 3d5</code></td>
+<td>Rolls <code>X</code> normal dice (up to 30) unordered. If you split 2 numbers with letter <code>d</code> (<code>xdy</code>) it will roll <code>X</code> dice from 1 to <code>y</code>.</td>
+<td><code>.rolluo</code> or <code>.rolluo 7</code> or <code>.rolluo 3d5</code></td>
 </tr>
 <tr>
 <td><code>.nroll</code></td>
-<td>Роллы в заданном диапазоне. Если указано только одно число, а не диапазон, это будет роль от 0 до этого числа.</td>
-<td><code>.nroll 5</code> или <code>.nroll 5-15</code></td>
+<td>Rolls in a given range. If you specify just one number instead of the range, it will role from 0 to that number.</td>
+<td><code>.nroll 5</code> or <code>.nroll 5-15</code></td>
 </tr>
 <tr>
 <td><code>.draw</code></td>
-<td>Берет карту из колоды этого сервера. Вы можете составить до 10 карт, указав количество карт рисовать.</td>
-<td><code>.draw</code> или <code>.draw 5</code></td>
+<td>Draws a card from this server's deck. You can draw up to 10 cards by supplying a number of cards to draw.</td>
+<td><code>.draw</code> or <code>.draw 5</code></td>
 </tr>
 <tr>
 <td><code>.drawnew</code></td>
-<td>Берет карту из новой колоды карт. Вы можете составить до 10 карт, указав количество карт рисовать.</td>
-<td><code>.drawnew</code> или <code>.drawnew 5</code></td>
+<td>Draws a card from the NEW deck of cards. You can draw up to 10 cards by supplying a number of cards to draw.</td>
+<td><code>.drawnew</code> or <code>.drawnew 5</code></td>
 </tr>
 <tr>
 <td><code>.deckshuffle</code> <code>.dsh</code></td>
-<td>Перетасовывает все карты обратно в колоду.</td>
+<td>Reshuffles all cards back into the deck.</td>
 <td><code>.dsh</code></td>
 </tr>
 <tr>
 <td><code>.flip</code></td>
-<td>Сальто монета(ы) - Орел или решка, и показывает изображение.</td>
-<td><code>.flip</code> или <code>.flip 3</code></td>
+<td>Flips coin(s) - heads or tails, and shows an image.</td>
+<td><code>.flip</code> or <code>.flip 3</code></td>
 </tr>
 <tr>
 <td><code>.betflip</code> <code>.bf</code></td>
-<td>Ставка думаю будет результат Орел или решка. Предполагаю награды вы 1.95 х валюты ставки (округляется вверх). Множитель может быть изменено владельцем бота.</td>
-<td><code>.bf 5 heads</code> или <code>.bf 3 t</code></td>
+<td>Bet to guess will the result be heads or tails. Guessing awards you 1.95x the currency you've bet (rounded up). Multiplier can be changed by the bot owner.</td>
+<td><code>.bf 5 heads</code> or <code>.bf 3 t</code></td>
 </tr>
 <tr>
 <td><code>.shop</code></td>
-<td>Списки этого сервера администраторов магазина. Постраничная разбивка.</td>
-<td><code>.shop</code> или <code>.shop 2</code></td>
+<td>Lists this server's administrators' shop. Paginated.</td>
+<td><code>.shop</code> or <code>.shop 2</code></td>
 </tr>
 <tr>
 <td><code>.buy</code></td>
-<td>Покупает товар из магазина по данному индексу. Если покупая товар, убедитесь, что бот может ДМ вы.</td>
+<td>Buys an item from the shop on a given index. If buying items, make sure that the bot can DM you.</td>
 <td><code>.buy 2</code></td>
 </tr>
 <tr>
 <td><code>.shopadd</code></td>
-<td>Добавляет элемент в магазин с указанием цен тип и имя. Доступные типы ролей и список. <strong>Требуется права "Администратор".</strong></td>
+<td>Adds an item to the shop by specifying type price and name. Available types are role and list. <strong>Requires Administrator server permission.</strong></td>
 <td><code>.shopadd role 1000 Rich</code></td>
 </tr>
 <tr>
 <td><code>.shoplistadd</code></td>
-<td>Добавляет предмет в список предметов для продажи в магазине запись с учетом индекса. Вы обычно хотите запустить эту команду в секретный канал, так что уникальные вещи не просочился. <strong>Требуется права "Администратор".</strong></td>
+<td>Adds an item to the list of items for sale in the shop entry given the index. You usually want to run this command in the secret channel, so that the unique items are not leaked. <strong>Requires Administrator server permission.</strong></td>
 <td><code>.shoplistadd 1 Uni-que-Steam-Key</code></td>
 </tr>
 <tr>
 <td><code>.shoprem</code> <code>.shoprm</code></td>
-<td>Удаляет элемент из магазина по его идентификатору. <strong>Требуется права "Администратор".</strong></td>
+<td>Removes an item from the shop by its ID. <strong>Requires Administrator server permission.</strong></td>
 <td><code>.shoprm 1</code></td>
 </tr>
 <tr>
 <td><code>.slotstats</code></td>
-<td>Показывает общую статистику команды слот для этого бота сессии. <strong>Только для Владельца</strong></td>
+<td>Shows the total stats of the slot command for this bot's session. <strong>Bot owner only</strong></td>
 <td><code>.slotstats</code></td>
 </tr>
 <tr>
 <td><code>.slottest</code></td>
-<td>Тесты, чтобы посмотреть, сколько слотов выплаты за х количество пьес. <strong>Только для Владельца</strong></td>
+<td>Tests to see how much slots payout for X number of plays. <strong>Bot owner only</strong></td>
 <td><code>.slottest 1000</code></td>
 </tr>
 <tr>
 <td><code>.slot</code></td>
-<td>Слоты играть Совёнок. Максимальная ставка составляет 9999. 1.5 сек на одного пользователя.</td>
+<td>Play Mashiro slots. Max bet is 9999. 1.5 second cooldown per user.</td>
 <td><code>.slot 5</code></td>
 </tr>
 <tr>
 <td><code>.waifureset</code></td>
-<td>Сбрасывает свой waifu статистика, за исключением текущих waifus.</td>
+<td>Resets your waifu stats, except current waifus.</td>
 <td><code>.waifureset</code></td>
 </tr>
 <tr>
 <td><code>.claimwaifu</code> <code>.claim</code></td>
-<td>Претендовать на waifu для себя, тратить валюту. Вы должны провести по крайней мере 10% больше, чем ее текущая стоимость, если она <code>.affinity</code> по отношению к вам.</td>
+<td>Claim a waifu for yourself by spending currency.  You must spend at least 10% more than her current value unless she set <code>.affinity</code> towards you.</td>
 <td><code>.claim 50 @Himesama</code></td>
 </tr>
 <tr>
 <td><code>.waifutransfer</code></td>
-<td>Передать в собственность один из ваших waifus другому пользователю. Вы должны заплатить 10% от стоимости waifu это.</td>
+<td>Transfer the ownership of one of your waifus to another user. You must pay 10% of your waifu's value.</td>
 <td><code>.waifutransfer @ExWaifu @NewOwner</code></td>
 </tr>
 <tr>
 <td><code>.divorce</code></td>
-<td>Релизы ваши претензии на определенный waifu. Вы получите часть денег, которые вы потратили, пока что waifu имеет сродство по отношению к вам. 6 часов кулдауна.</td>
+<td>Releases your claim on a specific waifu. You will get some of the money you've spent back unless that waifu has an affinity towards you. 6 hours cooldown.</td>
 <td><code>.divorce @CheatingSloot</code></td>
 </tr>
 <tr>
 <td><code>.affinity</code></td>
-<td>Устанавливает ваше влечение к кому-то вы хотите быть востребованы. Установка сродство позволит снизить их <code>.claim</code> на 20%. Вы можете оставить второй аргумент пуст, чтобы очистить свое сродство. 30 минут кулдаун.</td>
-<td><code>.affinity @MyHusband</code> или <code>.affinity</code></td>
+<td>Sets your affinity towards someone you want to be claimed by. Setting affinity will reduce their <code>.claim</code> on you by 20%. You can leave second argument empty to clear your affinity. 30 minutes cooldown.</td>
+<td><code>.affinity @MyHusband</code> or <code>.affinity</code></td>
 </tr>
 <tr>
 <td><code>.waifus</code> <code>.waifulb</code></td>
-<td>Показывает топ 9 waifus. Вы можете указать другую страницу, чтобы показать другим waifus.</td>
-<td><code>.waifus</code> или <code>.waifulb 3</code></td>
+<td>Shows top 9 waifus. You can specify another page to show other waifus.</td>
+<td><code>.waifus</code> or <code>.waifulb 3</code></td>
 </tr>
 <tr>
 <td><code>.waifuinfo</code> <code>.waifustats</code></td>
-<td>Статистика показывает waifu для целевого человека. По умолчанию вы если пользователя не предоставляется.</td>
-<td><code>.waifuinfo @MyCrush</code> или <code>.waifuinfo</code></td>
+<td>Shows waifu stats for a target person. Defaults to you if no user is provided.</td>
+<td><code>.waifuinfo @MyCrush</code> or <code>.waifuinfo</code></td>
 </tr>
 <tr>
 <td><code>.waifugift</code> <code>.gift</code> <code>.gifts</code></td>
-<td>Подарок пункта кому-то. Это приведет к увеличению их стоимости waifu на 50% от стоимости одаренных элемента, если они не имеют сродства к вам, или 100%, если они делают. Предоставить никаких аргументов, чтобы увидеть список предметов, которые вы можете подарок.</td>
-<td><code>.gifts</code> или <code>.gift Rose @Himesama</code></td>
+<td>Gift an item to someone. This will increase their waifu value by 50% of the gifted item's value if they don't have affinity set towards you, or 100% if they do. Provide no arguments to see a list of items that you can gift.</td>
+<td><code>.gifts</code> or <code>.gift Rose @Himesama</code></td>
 </tr>
 <tr>
 <td><code>.wheeloffortune</code> <code>.wheel</code></td>
-<td>Ставки некоторое количество валюты на "колесе фортуны". Колесо может остановиться на одном из многих различных мультипликаторов. Выигранная сумма округляется вниз до ближайшего целого числа.</td>
+<td>Bets a certain amount of currency on the wheel of fortune. Wheel can stop on one of many different multipliers. Won amount is rounded down to the nearest whole number.</td>
 <td><code>.wheel 10</code></td>
 </tr>
 </tbody>
 </table>
 <table class="highlight bordered">
-    <caption class="blue-text text-darken-2">Игры команды</caption>
+    <caption class="blue-text text-darken-2">Games commands</caption>
     <thead>
     <tr>
-        <th>Команда</th>
-        <th>Описание</th>
-        <th>Пример использования</th>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example usage</th>
     </tr>
     </thead>
 <tbody>
 <tr>
 <td><code>.choose</code></td>
-<td>Выбирает вещь из списка вещей</td>
+<td>Chooses a thing from a list of things</td>
 <td><code>.choose Get up;Sleep;Sleep more</code></td>
 </tr>
 <tr>
 <td><code>.8ball</code></td>
-<td>Попросите сайт 8ball да/нет вопрос.</td>
+<td>Ask the 8ball a yes/no question.</td>
 <td><code>.8ball Is b1nzy a nice guy?</code></td>
 </tr>
 <tr>
 <td><code>.rps</code></td>
-<td>Играть в игру ракета-скрепки-ножницы с Совёнок.</td>
+<td>Play a game of Rocket-Paperclip-Scissors with Mashiro.</td>
 <td><code>.rps scissors</code></td>
 </tr>
 <tr>
 <td><code>.rategirl</code></td>
-<td>Используйте универсальный горячий-сумасшедшая жена зону матрицы, чтобы определить девушка стоит. Это все молодые мужчины должны знать о женщинах. В любой момент, любая женщина, ранее расположенный на этом графике может исчезнуть из этого места и появиться в другом месте на графике.</td>
+<td>Use the universal hot-crazy wife zone matrix to determine the girl's worth. It is everything young men need to know about women. At any moment in time, any woman you have previously located on this chart can vanish from that location and appear anywhere else on the chart.</td>
 <td><code>.rategirl @SomeGurl</code></td>
 </tr>
 <tr>
 <td><code>.linux</code></td>
-<td>Печать настраиваемые междометие Линукс </td>
+<td>Prints a customizable Linux interjection</td>
 <td><code>.linux Spyware Windows</code></td>
 </tr>
 <tr>
 <td><code>.leet</code></td>
-<td>Преобразует текст в лите с 6 (1-6) уровнях тяжести </td>
+<td>Converts a text to leetspeak with 6 (1-6) severity levels</td>
 <td><code>.leet 3 Hello</code></td>
 </tr>
 <tr>
 <td><code>.acrophobia</code> <code>.acro</code></td>
-<td>Начинает Акрофобия игры.</td>
-<td><code>.acro</code> или <code>.acro -s 30</code></td>
+<td>Starts an Acrophobia game.</td>
+<td><code>.acro</code> or <code>.acro -s 30</code></td>
 </tr>
 <tr>
 <td><code>.cleverbot</code></td>
-<td>Сессии cleverbot переключает. Когда включено, бот будет отвечать на сообщения, начиная с ботом упомянуть на сервере. Пользовательские реакций, которые начинаются с %упоминаний% не будет работать, если cleverbot включена. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Toggles cleverbot session. When enabled, the bot will reply to messages starting with bot mention in the server. Custom reactions starting with %mention% won't work if cleverbot is enabled. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.cleverbot</code></td>
 </tr>
 <tr>
 <td><code>.connect4</code> <code>.con4</code></td>
-<td>Создает или присоединяется к существующему и connect4 игры. 2 игроков требуется для игры. Цель игры-получить 4 штук рядом друг с другом в вертикальной, горизонтальной или диагональной линии.</td>
+<td>Creates or joins an existing connect4 game. 2 players are required for the game. Objective of the game is to get 4 of your pieces next to each other in a vertical, horizontal or diagonal line.</td>
 <td><code>.connect4</code></td>
 </tr>
 <tr>
 <td><code>.hangmanlist</code></td>
-<td>Показывает список терминов палач типов.</td>
+<td>Shows a list of hangman term types.</td>
 <td><code>.hangmanlist</code></td>
 </tr>
 <tr>
 <td><code>.hangman</code></td>
-<td>Начинается игра виселица в канале. Использовать <code>.hangmanlist</code> , чтобы увидеть список доступных типов. По умолчанию "все".</td>
-<td><code>.hangman</code> или <code>.hangman movies</code></td>
+<td>Starts a game of hangman in the channel. Use <code>.hangmanlist</code> to see a list of available term types. Defaults to 'all'.</td>
+<td><code>.hangman</code> or <code>.hangman movies</code></td>
 </tr>
 <tr>
 <td><code>.hangmanstop</code></td>
-<td>Останавливает активный виселица игра на этом канале, если он существует.</td>
+<td>Stops the active hangman game on this channel if it exists.</td>
 <td><code>.hangmanstop</code></td>
 </tr>
 <tr>
 <td><code>.nunchi</code></td>
-<td>Создает или присоединяется к уже существующей игре nunchi. Пользователи должны рассчитывать на 1 от начального числа приведенных ботом. Если кто-то ошибется (типов incorrent количество, или повторяет один и тот же номер) они вышли из игры и новый раунд начинается без них. Не менее 3 пользователей.</td>
+<td>Creates or joins an existing nunchi game. Users have to count up by 1 from the starting number shown by the bot. If someone makes a mistake (types an incorrent number, or repeats the same number) they are out of the game and a new round starts without them.  Minimum 3 users required.</td>
 <td><code>.nunchi</code></td>
 </tr>
 <tr>
 <td><code>.pick</code></td>
-<td>Выбирает валюту сажали в этот канал. 60 секунд перезарядки.</td>
+<td>Picks the currency planted in this channel. 60 seconds cooldown.</td>
 <td><code>.pick</code></td>
 </tr>
 <tr>
 <td><code>.plant</code></td>
-<td>Тратить деньги, чтобы посадить его в этот канал. По умолчанию-1. (Если бот перезапускается или зависает, то валюты будут потеряны)</td>
-<td><code>.plant</code> или <code>.plant 5</code></td>
+<td>Spend an amount of currency to plant it in this channel. Default is 1. (If bot is restarted or crashes, the currency will be lost)</td>
+<td><code>.plant</code> or <code>.plant 5</code></td>
 </tr>
 <tr>
 <td><code>.gencurrency</code> <code>.gc</code></td>
-<td>Поколение переключает валюту на этом канале. Каждое сообщение будет иметь шанс на выпадение валюты. Шанс указан владелец бота. (по умолчанию 2%) <strong>требуется ManageMessages сервер разрешения.</strong></td>
+<td>Toggles currency generation on this channel. Every posted message will have chance to spawn currency. Chance is specified by the Bot Owner. (default is 2%) <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.gc</code></td>
 </tr>
 <tr>
 <td><code>.poll</code> <code>.ppoll</code></td>
-<td>Создает общественный опрос, который требует, чтобы пользователи введите номер варианта голосования в командной канал обкатывали. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Creates a public poll which requires users to type a number of the voting option in the channel command is ran in. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.ppoll Question?;Answer1;Answ 2;A_3</code></td>
 </tr>
 <tr>
 <td><code>.pollstats</code></td>
-<td>Показаны результаты опроса без остановки опроса на этом сервере. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Shows the poll results without stopping the poll on this server. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.pollstats</code></td>
 </tr>
 <tr>
 <td><code>.pollend</code></td>
-<td>Останавливает активный опрос на этом сервере и печатает результаты в этом канале. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Stops active poll on this server and prints the results in this channel. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.pollend</code></td>
 </tr>
 <tr>
 <td><code>.typestart</code></td>
-<td>Начинается конкурс типирования.</td>
+<td>Starts a typing contest.</td>
 <td><code>.typestart</code></td>
 </tr>
 <tr>
 <td><code>.typestop</code></td>
-<td>Останавливается в конкурсе, набрав на текущем канале.</td>
+<td>Stops a typing contest on the current channel.</td>
 <td><code>.typestop</code></td>
 </tr>
 <tr>
 <td><code>.typeadd</code></td>
-<td>Добавлена новая статья на конкурс типирования. <strong>Только для Владельца</strong></td>
+<td>Adds a new article to the typing contest. <strong>Bot owner only</strong></td>
 <td><code>.typeadd wordswords</code></td>
 </tr>
 <tr>
 <td><code>.typelist</code></td>
-<td>Списки добавлены печатать статьи с их Идентификаторами. 15 на страницу.</td>
-<td><code>.typelist</code> или <code>.typelist 3</code></td>
+<td>Lists added typing articles with their IDs. 15 per page.</td>
+<td><code>.typelist</code> or <code>.typelist 3</code></td>
 </tr>
 <tr>
 <td><code>.typedel</code></td>
-<td>Удаление вписав в статье дается идентификатор. <strong>Только для Владельца</strong></td>
+<td>Deletes a typing article given the ID. <strong>Bot owner only</strong></td>
 <td><code>.typedel 3</code></td>
 </tr>
 <tr>
 <td><code>.tictactoe</code> <code>.ttt</code></td>
-<td>Начинается игра в крестики-нолики. Другой пользователь должен выполнить команду в один и тот же канал для того, чтобы принять вызов. Используйте цифры 1-9 играть.</td>
+<td>Starts a game of tic tac toe. Another user must run the command in the same channel in order to accept the challenge. Use numbers 1-9 to play.</td>
 <td><code>.ttt</code></td>
 </tr>
 <tr>
 <td><code>.trivia</code> <code>.t</code></td>
-<td>Начинается игра пустяков. Вы можете добавить <code>nohint</code> , чтобы предотвратить подсказки. Первый игрок, чтобы получить до 10 очков, выигрывает по умолчанию. Вы можете указать другой номер. 30 секунд на вопрос.</td>
-<td><code>.t</code> или <code>.t --timeout 5 -p -w 3 -q 10</code></td>
+<td>Starts a game of trivia. You can add <code>nohint</code> to prevent hints. First player to get to 10 points wins by default. You can specify a different number. 30 seconds per question.</td>
+<td><code>.t</code> or <code>.t --timeout 5 -p -w 3 -q 10</code></td>
 </tr>
 <tr>
 <td><code>.tl</code></td>
-<td>Показывает текущих лидеров викторины.</td>
+<td>Shows a current trivia leaderboard.</td>
 <td><code>.tl</code></td>
 </tr>
 <tr>
 <td><code>.tq</code></td>
-<td>Завершает текущие викторины после текущего вопроса.</td>
+<td>Quits current trivia after current question.</td>
 <td><code>.tq</code></td>
 </tr>
 </tbody>
 </table>
 
 <table class="highlight bordered">
-    <caption class="blue-text text-darken-2">Справка</caption>
+    <caption class="blue-text text-darken-2">Music commands</caption>
     <thead>
     <tr>
-        <th>Команда</th>
-        <th>Описание</th>
-        <th>Пример использования</th>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example usage</th>
+    </tr>
+    </thead>
+<tbody>
+<tr>
+<td><code>.play</code> <code>.start</code></td>
+<td>If no arguments are specified, acts as <code>.next 1</code> command. If you specify a song number, it will jump to that song. If you specify a search query, acts as a <code>.q</code> command</td>
+<td><code>.play</code> or <code>.play 5</code> or <code>.play Dream Of Venice</code></td>
+</tr>
+<tr>
+<td><code>.queue</code> <code>.q</code> <code>.yq</code></td>
+<td>Queue a song using keywords or a link. Bot will join your voice channel. <strong>You must be in a voice channel</strong>.</td>
+<td><code>.q Dream Of Venice</code></td>
+</tr>
+<tr>
+<td><code>.queuenext</code> <code>.qn</code></td>
+<td>Works the same as <code>.queue</code> command, except it enqueues the new song after the current one. <strong>You must be in a voice channel</strong>.</td>
+<td><code>.qn Dream Of Venice</code></td>
+</tr>
+<tr>
+<td><code>.queuesearch</code> <code>.qs</code> <code>.yqs</code></td>
+<td>Search for top 5 youtube song result using keywords, and type the index of the song to play that song. Bot will join your voice channel. <strong>You must be in a voice channel</strong>.</td>
+<td><code>.qs Dream Of Venice</code></td>
+</tr>
+<tr>
+<td><code>.listqueue</code> <code>.lq</code></td>
+<td>Lists 10 currently queued songs per page. Default page is 1.</td>
+<td><code>.lq</code> or <code>.lq 2</code></td>
+</tr>
+<tr>
+<td><code>.next</code> <code>.n</code></td>
+<td>Goes to the next song in the queue. You have to be in the same voice channel as the bot. You can skip multiple songs, but in that case songs will not be requeued if .rcs or .rpl is enabled.</td>
+<td><code>.n</code> or <code>.n 5</code></td>
+</tr>
+<tr>
+<td><code>.stop</code> <code>.s</code></td>
+<td>Stops the music and preserves the current song index. Stays in the channel.</td>
+<td><code>.s</code></td>
+</tr>
+<tr>
+<td><code>.autodisconnect</code> <code>.autodc</code></td>
+<td>Toggles whether the bot should disconnect from the voice channel once it's done playing all of the songs.</td>
+<td><code>.autodc</code></td>
+</tr>
+<tr>
+<td><code>.destroy</code> <code>.d</code></td>
+<td>Completely stops the music and unbinds the bot from the channel. (may cause weird behaviour)</td>
+<td><code>.d</code></td>
+</tr>
+<tr>
+<td><code>.pause</code> <code>.p</code></td>
+<td>Pauses or Unpauses the song.</td>
+<td><code>.p</code></td>
+</tr>
+<tr>
+<td><code>.volume</code> <code>.vol</code></td>
+<td>Sets the music playback volume (0-100%)</td>
+<td><code>.vol 50</code></td>
+</tr>
+<tr>
+<td><code>.defvol</code> <code>.dv</code></td>
+<td>Sets the default music volume when music playback is started (0-100). Persists through restarts.</td>
+<td><code>.dv 80</code></td>
+</tr>
+<tr>
+<td><code>.songremove</code> <code>.srm</code></td>
+<td>Remove a song by its # in the queue, or 'all' to remove all songs from the queue and reset the song index.</td>
+<td><code>.srm 5</code></td>
+</tr>
+<tr>
+<td><code>.playlists</code> <code>.pls</code></td>
+<td>Lists all playlists. Paginated, 20 per page. Default page is 0.</td>
+<td><code>.pls 1</code></td>
+</tr>
+<tr>
+<td><code>.deleteplaylist</code> <code>.delpls</code></td>
+<td>Deletes a saved playlist using its id. Works only if you made it or if you are the bot owner.</td>
+<td><code>.delpls 5</code></td>
+</tr>
+<tr>
+<td><code>.save</code></td>
+<td>Saves a playlist under a certain name. Playlist name must be no longer than 20 characters and must not contain dashes.</td>
+<td><code>.save classical1</code></td>
+</tr>
+<tr>
+<td><code>.load</code></td>
+<td>Loads a saved playlist using its ID. Use <code>.pls</code> to list all saved playlists and <code>.save</code> to save new ones.</td>
+<td><code>.load 5</code></td>
+</tr>
+<tr>
+<td><code>.fairplay</code> <code>.fp</code></td>
+<td>Toggles fairplay. While enabled, the bot will prioritize songs from users who didn't have their song recently played instead of the song's position in the queue.</td>
+<td><code>.fp</code></td>
+</tr>
+<tr>
+<td><code>.songautodelete</code> <code>.sad</code></td>
+<td>Toggles whether the song should be automatically removed from the music queue when it finishes playing.</td>
+<td><code>.sad</code></td>
+</tr>
+<tr>
+<td><code>.soundcloudqueue</code> <code>.sq</code></td>
+<td>Queue a soundcloud song using keywords. Bot will join your voice channel. <strong>You must be in a voice channel</strong>.</td>
+<td><code>.sq Dream Of Venice</code></td>
+</tr>
+<tr>
+<td><code>.soundcloudpl</code> <code>.scpl</code></td>
+<td>Queue a Soundcloud playlist using a link.</td>
+<td><code>.scpl soundcloudseturl</code></td>
+</tr>
+<tr>
+<td><code>.nowplaying</code> <code>.np</code></td>
+<td>Shows the song that the bot is currently playing.</td>
+<td><code>.np</code></td>
+</tr>
+<tr>
+<td><code>.shuffle</code> <code>.sh</code> <code>.plsh</code></td>
+<td>Shuffles the current playlist.</td>
+<td><code>.plsh</code></td>
+</tr>
+<tr>
+<td><code>.playlist</code> <code>.pl</code></td>
+<td>Queues up to 500 songs from a youtube playlist specified by a link, or keywords.</td>
+<td><code>.pl &lt;youtube_playlist_link&gt;</code></td>
+</tr>
+<tr>
+<td><code>.radio</code> <code>.ra</code></td>
+<td>Queues a radio stream from a link. It can be a direct mp3 radio stream, .m3u, .pls .asx or .xspf (Usage Video: <a href="https://streamable.com/al54">https://streamable.com/al54</a>)</td>
+<td><code>.ra radio link here</code></td>
+</tr>
+<tr>
+<td><code>.local</code> <code>.lo</code></td>
+<td>Queues a local file by specifying a full path. <strong>Bot owner only</strong></td>
+<td><code>.lo C:/music/mysong.mp3</code></td>
+</tr>
+<tr>
+<td><code>.localplaylst</code> <code>.lopl</code></td>
+<td>Queues all songs from a directory. <strong>Bot owner only</strong></td>
+<td><code>.lopl C:/music/classical</code></td>
+</tr>
+<tr>
+<td><code>.move</code> <code>.mv</code></td>
+<td>Moves the bot to your voice channel. (works only if music is already playing)</td>
+<td><code>.mv</code></td>
+</tr>
+<tr>
+<td><code>.movesong</code> <code>.ms</code></td>
+<td>Moves a song from one position to another.</td>
+<td><code>.ms 5&gt;3</code></td>
+</tr>
+<tr>
+<td><code>.setmaxqueue</code> <code>.smq</code></td>
+<td>Sets a maximum queue size. Supply 0 or no argument to have no limit.</td>
+<td><code>.smq 50</code> or <code>.smq</code></td>
+</tr>
+<tr>
+<td><code>.setmaxplaytime</code> <code>.smp</code></td>
+<td>Sets a maximum number of seconds (&gt;14) a song can run before being skipped automatically. Set 0 to have no limit.</td>
+<td><code>.smp 0</code> or <code>.smp 270</code></td>
+</tr>
+<tr>
+<td><code>.reptcursong</code> <code>.rcs</code></td>
+<td>Toggles repeat of current song.</td>
+<td><code>.rcs</code></td>
+</tr>
+<tr>
+<td><code>.rpeatplaylst</code> <code>.rpl</code></td>
+<td>Toggles repeat of all songs in the queue (every song that finishes is added to the end of the queue).</td>
+<td><code>.rpl</code></td>
+</tr>
+<tr>
+<td><code>.autoplay</code> <code>.ap</code></td>
+<td>Toggles autoplay - When the song is finished, automatically queue a related Youtube song. (Works only for Youtube songs and when queue is empty)</td>
+<td><code>.ap</code></td>
+</tr>
+<tr>
+<td><code>.setmusicchannel</code> <code>.smch</code></td>
+<td>Sets the current channel as the default music output channel. This will output playing, finished, paused and removed songs to that channel instead of the channel where the first song was queued in. <strong>Requires ManageMessages server permission.</strong></td>
+<td><code>.smch</code></td>
+</tr>
+<tr>
+<td><code>.unsetmusicchannel</code> <code>.usmch</code></td>
+<td>Bot will output playing, finished, paused and removed songs to the channel where the first song was queued in. <strong>Requires ManageMessages server permission.</strong></td>
+<td><code>.smch</code></td>
+</tr>
+</tbody>
+</table>
+
+<table class="highlight bordered">
+    <caption class="blue-text text-darken-2">Help commands</caption>
+    <thead>
+    <tr>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example usage</th>
     </tr>
     </thead>
 <tbody>
 <tr>
 <td><code>.modules</code> <code>.mdls</code></td>
-<td>Списки всех бот-модулей.</td>
+<td>Lists all bot modules.</td>
 <td><code>.modules</code></td>
 </tr>
 <tr>
 <td><code>.commands</code> <code>.cmds</code></td>
-<td>Список всех команд бота с определенного модуля. Вы можете указать либо полное имя или только первые несколько букв из имени модуля.</td>
-<td><code>.commands Administration</code> или <code>.cmds Admin</code></td>
+<td>List all of the bot's commands from a certain module. You can either specify the full name or only the first few letters of the module name.</td>
+<td><code>.commands Administration</code> or <code>.cmds Admin</code></td>
 </tr>
 <tr>
 <td><code>.help</code> <code>.h</code></td>
-<td>Как показывает справка для одной команды, или ДМС вы помочь ссылкой, если аргументы не указаны.</td>
-<td><code>.h</code> или <code>.help</code></td>
+<td>Either shows a help for a single command, or DMs you help link if no arguments are specified.</td>
+<td><code>.h .cmds</code> or <code>.h</code></td>
+</tr>
+<tr>
+<td><code>.hgit</code></td>
+<td>Generates the commandlist.md file. <strong>Bot owner only</strong></td>
+<td><code>.hgit</code></td>
+</tr>
+<tr>
+<td><code>.readme</code> <code>.guide</code></td>
+<td>Sends a readme and a guide links to the channel.</td>
+<td><code>.readme</code> or <code>.guide</code></td>
+</tr>
+<tr>
+<td><code>.donate</code></td>
+<td>Instructions for helping the project financially.</td>
+<td><code>.donate</code></td>
 </tr>
 </tbody>
 </table>
 
 <table class="highlight bordered">
-    <caption class="blue-text text-darken-2">Блоги команд</caption>
+    <caption class="blue-text text-darken-2">NSFW commands</caption>
     <thead>
     <tr>
-        <th>Команда</th>
-        <th>Описание</th>
-        <th>Пример использования</th>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example usage</th>
     </tr>
     </thead>
 <tbody>
 <tr>
 <td><code>.autohentai</code></td>
-<td>Сообщений хентай каждые x секунд со случайным тег из предоставленного теги. Использовать <code>|</code> для отделения меток. Минимум 20 секунд. Предоставить никаких аргументов, чтобы отключить. <strong>Требуется права "Управление сообщениями".</strong></td>
-<td><code>.autohentai 30 yuri|tail|long_hair</code> или <code>.autohentai</code></td>
+<td>Posts a hentai every X seconds with a random tag from the provided tags. Use <code>|</code> to separate tags. 20 seconds minimum. Provide no arguments to disable. <strong>Requires ManageMessages channel permission.</strong></td>
+<td><code>.autohentai 30 yuri|tail|long_hair</code> or <code>.autohentai</code></td>
 </tr>
 <tr>
 <td><code>.autoboobs</code></td>
-<td>Сообщений сиськи каждые x секунд. Минимум 20 секунд. Предоставить никаких аргументов, чтобы отключить. <strong>Требуется права "Управление сообщениями".</strong></td>
-<td><code>.autoboobs 30</code> или <code>.autoboobs</code></td>
+<td>Posts a boobs every X seconds. 20 seconds minimum. Provide no arguments to disable. <strong>Requires ManageMessages channel permission.</strong></td>
+<td><code>.autoboobs 30</code> or <code>.autoboobs</code></td>
 </tr>
 <tr>
 <td><code>.autobutts</code></td>
-<td>Сообщений окурки каждые x секунд. Минимум 20 секунд. Предоставить никаких аргументов, чтобы отключить. <strong>Требуется права "Управление сообщениями".</strong></td>
-<td><code>.autobutts 30</code> или <code>.autobutts</code></td>
+<td>Posts a butts every X seconds. 20 seconds minimum. Provide no arguments to disable. <strong>Requires ManageMessages channel permission.</strong></td>
+<td><code>.autobutts 30</code> or <code>.autobutts</code></td>
 </tr>
 <tr>
 <td><code>.hentai</code></td>
-<td>Показывает изображения хентай из случайный сайт (gelbooru и danbooru или konachan или atfbooru или яндере) с заданным тегом. Тег является необязательным, но предпочтительным. Допускается только 1 тег.</td>
+<td>Shows a hentai image from a random website (gelbooru or danbooru or konachan or atfbooru or yandere) with a given tag. Tag is optional but preferred. Only 1 tag allowed.</td>
 <td><code>.hentai yuri</code></td>
 </tr>
 <tr>
 <td><code>.hentaibomb</code></td>
-<td>Показывает всего 5 картинок (от gelbooru, danbooru, konachan, яндере и atfbooru). Тег является необязательным, но предпочтительным.</td>
+<td>Shows a total 5 images (from gelbooru, danbooru, konachan, yandere and atfbooru). Tag is optional but preferred.</td>
 <td><code>.hentaibomb yuri</code></td>
 </tr>
 <tr>
 <td><code>.yandere</code></td>
-<td>Показывает случайную картинку из яндере с заданным тегом. Тег является необязательным, но предпочтительным. (несколько тегов добавляются с +)</td>
+<td>Shows a random image from yandere with a given tag. Tag is optional but preferred. (multiple tags are appended with +)</td>
 <td><code>.yandere tag1+tag2</code></td>
 </tr>
 <tr>
 <td><code>.konachan</code></td>
-<td>Показывает случайные изображения хентай с konachan с заданным тегом. Тег является необязательным, но предпочтительным.</td>
+<td>Shows a random hentai image from konachan with a given tag. Tag is optional but preferred.</td>
 <td><code>.konachan yuri</code></td>
 </tr>
 <tr>
 <td><code>.e621</code></td>
-<td>Показывает случайные изображения хентай с e621.net с указанным тегом. Тег является необязательным, но предпочтительным. Используйте пробелы для нескольких тегов.</td>
+<td>Shows a random hentai image from e621.net with a given tag. Tag is optional but preferred. Use spaces for multiple tags.</td>
 <td><code>.e621 yuri kissing</code></td>
 </tr>
 <tr>
 <td><code>.rule34</code></td>
-<td>Показывает случайную картинку из сайт rule34.XX с данным тегом. Тег является необязательным, но предпочтительным. (несколько тегов добавляются с +)</td>
+<td>Shows a random image from rule34.xx with a given tag. Tag is optional but preferred. (multiple tags are appended with +)</td>
 <td><code>.rule34 yuri+kissing</code></td>
 </tr>
 <tr>
 <td><code>.danbooru</code></td>
-<td>Показывает случайные изображения хентай с danbooru с заданным тегом. Тег является необязательным, но предпочтительным. (несколько тегов добавляются с +)</td>
+<td>Shows a random hentai image from danbooru with a given tag. Tag is optional but preferred. (multiple tags are appended with +)</td>
 <td><code>.danbooru yuri+kissing</code></td>
 </tr>
 <tr>
 <td><code>.gelbooru</code></td>
-<td>Показывает случайные изображения хентай с gelbooru с заданным тегом. Тег является необязательным, но предпочтительным. (несколько тегов добавляются с +)</td>
+<td>Shows a random hentai image from gelbooru with a given tag. Tag is optional but preferred. (multiple tags are appended with +)</td>
 <td><code>.gelbooru yuri+kissing</code></td>
 </tr>
 <tr>
 <td><code>.boobs</code></td>
-<td>Реальным содержанием для взрослых.</td>
+<td>Real adult content.</td>
 <td><code>.boobs</code></td>
 </tr>
 <tr>
 <td><code>.butts</code> <code>.ass</code> <code>.butt</code></td>
-<td>Реальным содержанием для взрослых.</td>
-<td><code>.butts</code> или <code>.ass</code></td>
+<td>Real adult content.</td>
+<td><code>.butts</code> or <code>.ass</code></td>
 </tr>
 <tr>
 <td><code>.nsfwtagbl</code> <code>.nsfwtbl</code></td>
-<td>Переключает ли тег в черном списке или нет в поисках офиса. Обеспечить без параметров, чтобы увидеть список невыездных теги.</td>
+<td>Toggles whether the tag is blacklisted or not in nsfw searches. Provide no parameters to see the list of blacklisted tags.</td>
 <td><code>.nsfwtbl poop</code></td>
 </tr>
 <tr>
 <td><code>.nsfwcc</code></td>
-<td>Очищает кэш и блоги. <strong>Только для Владельца</strong></td>
+<td>Clears nsfw cache. <strong>Bot owner only</strong></td>
 <td><code>.nsfwcc</code></td>
 </tr>
 </tbody>
 </table>
 
 <table class="highlight bordered">
-    <caption class="blue-text text-darken-2">Команды разрешения </caption>
+    <caption class="blue-text text-darken-2">Permissions commands</caption>
     <thead>
     <tr>
-        <th>Команда</th>
-        <th>Описание</th>
-        <th>Пример использования</th>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example usage</th>
     </tr>
     </thead>
 <tbody>
 <tr>
 <td><code>.verbose</code> <code>.v</code></td>
-<td>Указывает, следует ли показывать, когда команда/модуля блокируется.</td>
+<td>Sets whether to show when a command/module is blocked.</td>
 <td><code>.verbose true</code></td>
 </tr>
 <tr>
 <td><code>.permrole</code> <code>.pr</code></td>
-<td>Задает роль, которую может изменять разрешения. Поставка без параметров, чтобы увидеть текущую. По умолчанию - 'белоснежная'.</td>
+<td>Sets a role which can change permissions. Supply no parameters to see the current one. Default is 'Mashiro'.</td>
 <td><code>.pr role</code></td>
 </tr>
 <tr>
 <td><code>.listperms</code> <code>.lp</code></td>
-<td>Списки всей цепочке разрешения с их индексами. Вы можете указать дополнительный номер страницы, если есть много разрешений.</td>
-<td><code>.lp</code> или <code>.lp 3</code></td>
+<td>Lists whole permission chain with their indexes. You can specify an optional page number if there are a lot of permissions.</td>
+<td><code>.lp</code> or <code>.lp 3</code></td>
 </tr>
 <tr>
 <td><code>.removeperm</code> <code>.rp</code></td>
-<td>Удаляет разрешения из заданной позиции в списке разрешений.</td>
+<td>Removes a permission from a given position in the Permissions list.</td>
 <td><code>.rp 1</code></td>
 </tr>
 <tr>
 <td><code>.moveperm</code> <code>.mp</code></td>
-<td>Разрешение движется из одной позиции в другую в списке разрешений.</td>
+<td>Moves permission from one position to another in the Permissions list.</td>
 <td><code>.mp 2 4</code></td>
 </tr>
 <tr>
 <td><code>.srvrcmd</code> <code>.sc</code></td>
-<td>Устанавливает разрешение командования на уровне сервера.</td>
+<td>Sets a command's permission at the server level.</td>
 <td><code>.sc "command name" disable</code></td>
 </tr>
 <tr>
 <td><code>.srvrmdl</code> <code>.sm</code></td>
-<td>Устанавливает разрешение модуля на уровне сервера.</td>
+<td>Sets a module's permission at the server level.</td>
 <td><code>.sm ModuleName enable</code></td>
 </tr>
 <tr>
 <td><code>.usrcmd</code> <code>.uc</code></td>
-<td>Устанавливает разрешение командования на уровне пользователя.</td>
+<td>Sets a command's permission at the user level.</td>
 <td><code>.uc "command name" enable SomeUsername</code></td>
 </tr>
 <tr>
 <td><code>.usrmdl</code> <code>.um</code></td>
-<td>Устанавливает разрешение модуля на уровне пользователя.</td>
+<td>Sets a module's permission at the user level.</td>
 <td><code>.um ModuleName enable SomeUsername</code></td>
 </tr>
 <tr>
 <td><code>.rolecmd</code> <code>.rc</code></td>
-<td>Устанавливает разрешение командования на уровне роли.</td>
+<td>Sets a command's permission at the role level.</td>
 <td><code>.rc "command name" disable MyRole</code></td>
 </tr>
 <tr>
 <td><code>.rolemdl</code> <code>.rm</code></td>
-<td>Устанавливает разрешение модуля на уровне роли.</td>
+<td>Sets a module's permission at the role level.</td>
 <td><code>.rm ModuleName enable MyRole</code></td>
 </tr>
 <tr>
 <td><code>.chnlcmd</code> <code>.cc</code></td>
-<td>Устанавливает разрешение командования на уровне канала.</td>
+<td>Sets a command's permission at the channel level.</td>
 <td><code>.cc "command name" enable SomeChannel</code></td>
 </tr>
 <tr>
 <td><code>.chnlmdl</code> <code>.cm</code></td>
-<td>Устанавливает разрешение модуля на уровне канала.</td>
+<td>Sets a module's permission at the channel level.</td>
 <td><code>.cm ModuleName enable SomeChannel</code></td>
 </tr>
 <tr>
 <td><code>.allchnlmdls</code> <code>.acm</code></td>
-<td>Включить или отключить все модули в указанное канала.</td>
+<td>Enable or disable all modules in a specified channel.</td>
 <td><code>.acm enable #SomeChannel</code></td>
 </tr>
 <tr>
 <td><code>.allrolemdls</code> <code>.arm</code></td>
-<td>Включить или отключить все модули для определенной роли.</td>
+<td>Enable or disable all modules for a specific role.</td>
 <td><code>.arm [enable/disable] MyRole</code></td>
 </tr>
 <tr>
 <td><code>.allusrmdls</code> <code>.aum</code></td>
-<td>Включить или отключить все модули для конкретного пользователя.</td>
+<td>Enable or disable all modules for a specific user.</td>
 <td><code>.aum enable @someone</code></td>
 </tr>
 <tr>
 <td><code>.allsrvrmdls</code> <code>.asm</code></td>
-<td>Включить или отключить все модули на сервере.</td>
+<td>Enable or disable all modules for your server.</td>
 <td><code>.asm [enable/disable]</code></td>
 </tr>
 <tr>
 <td><code>.ubl</code></td>
-<td>Либо [добавить]или [рем]овес пользователя, указанное упоминание или ID из черного списка. <strong>Только для Владельца</strong></td>
-<td><code>.ubl add @SomeUser</code> или <code>.ubl rem 12312312313</code></td>
+<td>Either [add]s or [rem]oves a user specified by a Mention or an ID from a blacklist. <strong>Bot owner only</strong></td>
+<td><code>.ubl add @SomeUser</code> or <code>.ubl rem 12312312313</code></td>
 </tr>
 <tr>
 <td><code>.cbl</code></td>
-<td>Либо [добавить]или [Рэм]овес канала задается идентификатором из черного списка. <strong>Только для Владельца</strong></td>
+<td>Either [add]s or [rem]oves a channel specified by an ID from a blacklist. <strong>Bot owner only</strong></td>
 <td><code>.cbl rem 12312312312</code></td>
 </tr>
 <tr>
 <td><code>.sbl</code></td>
-<td>Либо [добавить]или [Рэм]овес сервер указан по имени или ID из черного списка. <strong>Только для Владельца</strong></td>
-<td><code>.sbl add 12312321312</code> или <code>.sbl rem SomeTrashServer</code></td>
+<td>Either [add]s or [rem]oves a server specified by a Name or an ID from a blacklist. <strong>Bot owner only</strong></td>
+<td><code>.sbl add 12312321312</code> or <code>.sbl rem SomeTrashServer</code></td>
 </tr>
 <tr>
 <td><code>.cmdcooldown</code> <code>.cmdcd</code></td>
-<td>Задает время восстановления для каждого пользователя для команды. Установите его в 0, чтобы снять кулдаун.</td>
+<td>Sets a cooldown per user for a command. Set it to 0 to remove the cooldown.</td>
 <td><code>.cmdcd "some cmd" 5</code></td>
 </tr>
 <tr>
 <td><code>.allcmdcooldowns</code> <code>.acmdcds</code></td>
-<td>Показывает список всех команд и их кулдауны.</td>
+<td>Shows a list of all commands and their respective cooldowns.</td>
 <td><code>.acmdcds</code></td>
 </tr>
 <tr>
 <td><code>.srvrfilterinv</code> <code>.sfi</code></td>
-<td>Переключение автоматическое удаление приглашений размещена на сервере. Не влияет на владельца бота.</td>
+<td>Toggles automatic deletion of invites posted in the server. Does not affect the Bot Owner.</td>
 <td><code>.sfi</code></td>
 </tr>
 <tr>
 <td><code>.chnlfilterinv</code> <code>.cfi</code></td>
-<td>Переключение автоматическое удаление приглашений размещен в канале. Не отменяет <code>.srvrfilterinv</code> включена установка. Не влияет на владельца бота.</td>
+<td>Toggles automatic deletion of invites posted in the channel. Does not negate the <code>.srvrfilterinv</code> enabled setting. Does not affect the Bot Owner.</td>
 <td><code>.cfi</code></td>
 </tr>
 <tr>
 <td><code>.srvrfilterwords</code> <code>.sfw</code></td>
-<td>Переключение автоматическое удаление сообщений, содержащих отфильтрованы слова на сервере. Не влияет на владельца бота.</td>
+<td>Toggles automatic deletion of messages containing filtered words on the server. Does not affect the Bot Owner.</td>
 <td><code>.sfw</code></td>
 </tr>
 <tr>
 <td><code>.chnlfilterwords</code> <code>.cfw</code></td>
-<td>Переключение автоматическое удаление сообщений, содержащих отфильтрованы слова на канале. Не отменяет <code>.srvrfilterwords</code> включена установка. Не влияет на владельца бота.</td>
+<td>Toggles automatic deletion of messages containing filtered words on the channel. Does not negate the <code>.srvrfilterwords</code> enabled setting. Does not affect the Bot Owner.</td>
 <td><code>.cfw</code></td>
 </tr>
 <tr>
 <td><code>.fw</code></td>
-<td>Добавляет или удаляет (если он существует) слово из списка отфильтрованных слов. Использовать<code>.sfw</code> или <code>.cfw</code> включать и отключать фильтрацию.</td>
+<td>Adds or removes (if it exists) a word from the list of filtered words. Use<code>.sfw</code> or <code>.cfw</code> to toggle filtering.</td>
 <td><code>.fw poop</code></td>
 </tr>
 <tr>
 <td><code>.lstfilterwords</code> <code>.lfw</code></td>
-<td>Показывает список отфильтрованных слов.</td>
+<td>Shows a list of filtered words.</td>
 <td><code>.lfw</code></td>
 </tr>
 <tr>
 <td><code>.listglobalperms</code> <code>.lgp</code></td>
-<td>Списки глобальных разрешений, установленных владельцем бота. <strong>Только для Владельца</strong></td>
+<td>Lists global permissions set by the bot owner. <strong>Bot owner only</strong></td>
 <td><code>.lgp</code></td>
 </tr>
 <tr>
 <td><code>.globalmodule</code> <code>.gmod</code></td>
-<td>Переключает ли модуль может быть использован на любом сервере. <strong>Только для Владельца</strong></td>
+<td>Toggles whether a module can be used on any server. <strong>Bot owner only</strong></td>
 <td><code>.gmod nsfw</code></td>
 </tr>
 <tr>
 <td><code>.globalcommand</code> <code>.gcmd</code></td>
-<td>Переключает ли команда может быть использована на любом сервере. <strong>Только для Владельца</strong></td>
+<td>Toggles whether a command can be used on any server. <strong>Bot owner only</strong></td>
 <td><code>.gcmd .stats</code></td>
 </tr>
 <tr>
 <td><code>.resetperms</code></td>
-<td>Сброс модуля разрешения бота на этот сервер по умолчанию. <strong>Требуется права "Администратор".</strong></td>
+<td>Resets the bot's permissions module on this server to the default value. <strong>Requires Administrator server permission.</strong></td>
 <td><code>.resetperms</code></td>
 </tr>
 <tr>
 <td><code>.resetglobalperms</code></td>
-<td>Сброс глобальных разрешений, установленных владельцем бота. <strong>Только для Владельца</strong></td>
+<td>Resets global permissions set by bot owner. <strong>Bot owner only</strong></td>
 <td><code>.resetglobalperms</code></td>
 </tr>
 </tbody>
 </table>
 
 <table class="highlight bordered">
-    <caption class="blue-text text-darken-2">Покемон команды</caption>
+    <caption class="blue-text text-darken-2">Pokemon commands</caption>
     <thead>
     <tr>
-        <th>Команда</th>
-        <th>Описание</th>
-        <th>Пример использования</th>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example usage</th>
     </tr>
     </thead>
 <tbody>
 <tr>
 <td><code>.attack</code></td>
-<td>Атакует цель с заданного перемещения. Использовать <code>.movelist</code> для просмотра списка перемещает свой тип можно использовать.</td>
+<td>Attacks a target with the given move. Use <code>.movelist</code> to see a list of moves your type can use.</td>
 <td><code>.attack "vine whip" @someguy</code></td>
 </tr>
 <tr>
 <td><code>.movelist</code> <code>.ml</code></td>
-<td>Списки ходы вы можете использовать</td>
+<td>Lists the moves you are able to use</td>
 <td><code>.ml</code></td>
 </tr>
 <tr>
 <td><code>.heal</code></td>
-<td>Лечит кого-то. Возрождает тех, кто потерял сознание. Стоимость одной валюты.</td>
+<td>Heals someone. Revives those who fainted. Costs one Currency.</td>
 <td><code>.heal @someone</code></td>
 </tr>
 <tr>
 <td><code>.type</code></td>
-<td>Получить poketype цели.</td>
+<td>Get the poketype of the target.</td>
 <td><code>.type @someone</code></td>
 </tr>
 <tr>
 <td><code>.settype</code></td>
-<td>Установить poketype. Стоимость одной валюты. Предоставить никаких аргументов, чтобы увидеть список доступных типов.</td>
-<td><code>.settype fire</code> или <code>.settype</code></td>
+<td>Set your poketype. Costs one Currency. Provide no arguments to see a list of available types.</td>
+<td><code>.settype fire</code> or <code>.settype</code></td>
 </tr>
 </tbody>
 </table>
 
 <table class="highlight bordered">
-    <caption class="blue-text text-darken-2">Поиски команды</caption>
+    <caption class="blue-text text-darken-2">Searches commands</caption>
     <thead>
     <tr>
-        <th>Команда</th>
-        <th>Описание</th>
-        <th>Пример использования</th>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example usage</th>
     </tr>
     </thead>
 <tbody>
 <tr>
 <td><code>.lolban</code></td>
-<td>Топ-шоу запретили чемпионов упорядочены по ставке бан.</td>
+<td>Shows top banned champions ordered by ban rate.</td>
 <td><code>.lolban</code></td>
 </tr>
 <tr>
 <td><code>.crypto</code> <code>.c</code></td>
-<td>Показывает основную статистику о криптовалюте от coinmarketcap.com. Вы можете использовать имя или аббревиатура валюты.</td>
-<td><code>.c btc</code> или <code>.c bitcoin</code></td>
+<td>Shows basic stats about a cryptocurrency from coinmarketcap.com. You can use either a name or an abbreviation of the currency.</td>
+<td><code>.c btc</code> or <code>.c bitcoin</code></td>
 </tr>
 <tr>
 <td><code>.rip</code></td>
-<td>Рип</td>
+<td>rip</td>
 <td><code>rip</code></td>
 </tr>
 <tr>
 <td><code>.say</code></td>
-<td>Бот будет отправить сообщение в этот канал. Поддерживает врежет. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Bot will send the message you typed in this channel. Supports embeds. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.say hi</code></td>
 </tr>
 <tr>
 <td><code>.weather</code> <code>.we</code></td>
-<td>Показывает данные о погоде на определенный город. Вы также можете указать страну после запятой.</td>
+<td>Shows weather data for a specified city. You can also specify a country after a comma.</td>
 <td><code>.we Moscow, RU</code></td>
 </tr>
 <tr>
 <td><code>.time</code></td>
-<td>Показывает Текущее время и Часовой пояс в указанное место.</td>
+<td>Shows the current time and timezone in the specified location.</td>
 <td><code>.time London, UK</code></td>
 </tr>
 <tr>
 <td><code>.youtube</code> <code>.yt</code></td>
-<td>Поиск видео и показывает первый результат</td>
+<td>Searches youtubes and shows the first result</td>
 <td><code>.yt query</code></td>
 </tr>
 <tr>
 <td><code>.imdb</code> <code>.omdb</code></td>
-<td>Запросы ролях для кино или сериала, показать первый результат.</td>
+<td>Queries omdb for movies or series, show first result.</td>
 <td><code>.imdb Batman vs Superman</code></td>
 </tr>
 <tr>
 <td><code>.randomcat</code> <code>.meow</code></td>
-<td>Показывает случайные изображения кошки.</td>
+<td>Shows a random cat image.</td>
 <td><code>.meow</code></td>
 </tr>
 <tr>
 <td><code>.randomdog</code> <code>.woof</code></td>
-<td>Показывает случайные изображения собаки.</td>
+<td>Shows a random dog image.</td>
 <td><code>.woof</code></td>
 </tr>
 <tr>
 <td><code>.image</code> <code>.img</code></td>
-<td>Тянет первые изображения с помощью параметра поиска. Использовать <code>.rimg</code> для различных результатов.</td>
+<td>Pulls the first image found using a search parameter. Use <code>.rimg</code> for different results.</td>
 <td><code>.img cute kitten</code></td>
 </tr>
 <tr>
 <td><code>.randomimage</code> <code>.rimg</code></td>
-<td>Тянет случайным образом с помощью параметра поиска.</td>
+<td>Pulls a random image using a search parameter.</td>
 <td><code>.rimg cute kitten</code></td>
 </tr>
 <tr>
 <td><code>.lmgtfy</code></td>
-<td>Google что-то за идиота.</td>
+<td>Google something for an idiot.</td>
 <td><code>.lmgtfy query</code></td>
 </tr>
 <tr>
 <td><code>.shorten</code></td>
-<td>Попытки сократить URL-адреса, если это не удается, возвращает ввода URL-адреса.</td>
+<td>Attempts to shorten an URL, if it fails, returns the input URL.</td>
 <td><code>.shorten https://google.com</code></td>
 </tr>
 <tr>
 <td><code>.google</code> <code>.g</code></td>
-<td>Получить ссылку поиска Google для некоторых терминов.</td>
+<td>Get a Google search link for some terms.</td>
 <td><code>.google query</code></td>
 </tr>
 <tr>
 <td><code>.magicthegathering</code> <code>.mtg</code></td>
-<td>Искать Магия сбор карты.</td>
-<td><code>.magicthegathering about face</code> или <code>.mtg about face</code></td>
+<td>Searches for a Magic The Gathering card.</td>
+<td><code>.magicthegathering about face</code> or <code>.mtg about face</code></td>
 </tr>
 <tr>
 <td><code>.hearthstone</code> <code>.hs</code></td>
-<td>Искать в hearthstone-карты и показывает его изображение. Займет некоторое время для завершения.</td>
+<td>Searches for a Hearthstone card and shows its image. Takes a while to complete.</td>
 <td><code>.hs Ysera</code></td>
 </tr>
 <tr>
 <td><code>.yodify</code> <code>.yoda</code></td>
-<td>Переводит ваши нормальные предложения в стиле Йоды предложения!</td>
+<td>Translates your normal sentences into Yoda styled sentences!</td>
 <td><code>.yoda my feelings hurt</code></td>
 </tr>
 <tr>
 <td><code>.urbandict</code> <code>.ud</code></td>
-<td>Поиск городских слова в словаре.</td>
+<td>Searches Urban Dictionary for a word.</td>
 <td><code>.ud Pineapple</code></td>
 </tr>
 <tr>
 <td><code>.define</code> <code>.def</code></td>
-<td>Найдет определение слова.</td>
+<td>Finds a definition of a word.</td>
 <td><code>.def heresy</code></td>
 </tr>
 <tr>
 <td><code>.#</code></td>
-<td>Поиск Tagdef.com по хештегу.</td>
+<td>Searches Tagdef.com for a hashtag.</td>
 <td><code>.# ff</code></td>
 </tr>
 <tr>
 <td><code>.catfact</code></td>
-<td>Показывает случайную catfact от <a href="http://catfacts-api.appspot.com/api/facts">http://catfacts-api.appspot.com/api/facts</a></td>
+<td>Shows a random catfact from <a href="http://catfacts-api.appspot.com/api/facts">http://catfacts-api.appspot.com/api/facts</a></td>
 <td><code>.catfact</code></td>
 </tr>
 <tr>
 <td><code>.revav</code></td>
-<td>Возвращает Google обратный поиск изображений для кого-то аватар.</td>
+<td>Returns a Google reverse image search for someone's avatar.</td>
 <td><code>.revav @SomeGuy</code></td>
 </tr>
 <tr>
 <td><code>.revimg</code></td>
-<td>Возвращает Google обратный поиск изображения для изображения по ссылке.</td>
+<td>Returns a Google reverse image search for an image from a link.</td>
 <td><code>.revimg Image link</code></td>
 </tr>
 <tr>
 <td><code>.safebooru</code></td>
-<td>Показывает случайную картинку из safebooru с заданным тегом. Тег является необязательным, но предпочтительным. (несколько тегов добавляются с +)</td>
+<td>Shows a random image from safebooru with a given tag. Tag is optional but preferred. (multiple tags are appended with +)</td>
 <td><code>.safebooru yuri+kissing</code></td>
 </tr>
 <tr>
 <td><code>.wikipedia</code> <code>.wiki</code></td>
-<td>Дает тебе ссылка на Википедию </td>
+<td>Gives you back a wikipedia link</td>
 <td><code>.wiki query</code></td>
 </tr>
 <tr>
 <td><code>.color</code></td>
-<td>Показывает Вам, какой цвет соответствует тому, что наговор.</td>
+<td>Shows you what color corresponds to that hex.</td>
 <td><code>.color 00ff00</code></td>
 </tr>
 <tr>
 <td><code>.videocall</code></td>
-<td>Создает частную <a href="http://www.appear.in/">http://www.appear.in</a> видеовызов ссылке для вас и других упомянутых людей. Ссылка отправляется упомянутых людей через личное сообщение.</td>
+<td>Creates a private <a href="http://www.appear.in">http://www.appear.in</a> video call link for you and other mentioned people. The link is sent to mentioned people via a private message.</td>
 <td><code>.videocall "@the First" "@Xyz"</code></td>
 </tr>
 <tr>
 <td><code>.avatar</code> <code>.av</code></td>
-<td>Показывает упомянутое лицо на аватаре.</td>
+<td>Shows a mentioned person's avatar.</td>
 <td><code>.av @SomeGuy</code></td>
 </tr>
 <tr>
 <td><code>.wikia</code></td>
-<td>Дает вам викии ссылке</td>
-<td><code>.wikia mtg Vigilance</code> или <code>.wikia mlp Dashy</code></td>
+<td>Gives you back a wikia link</td>
+<td><code>.wikia mtg Vigilance</code> or <code>.wikia mlp Dashy</code></td>
 </tr>
 <tr>
 <td><code>.novel</code></td>
-<td>Искать роман на <code>http://novelupdates.com/</code>. Вы должны предоставить точное название.</td>
+<td>Searches for a novel on <code>http://novelupdates.com/</code>. You have to provide an exact name.</td>
 <td><code>.novel the nine cauldrons</code></td>
 </tr>
 <tr>
 <td><code>.mal</code></td>
-<td>Показывает основную информацию из профиля MyAnimeList.</td>
+<td>Shows basic info from a MyAnimeList profile.</td>
 <td><code>.mal straysocks</code></td>
 </tr>
 <tr>
 <td><code>.anime</code> <code>.ani</code> <code>.aq</code></td>
-<td>Запросы anilist для аниме и показывает первый результат.</td>
+<td>Queries anilist for an anime and shows the first result.</td>
 <td><code>.ani aquarion evol</code></td>
 </tr>
 <tr>
 <td><code>.manga</code> <code>.mang</code> <code>.mq</code></td>
-<td>Запросы anilist для манги и показывает первый результат.</td>
+<td>Queries anilist for a manga and shows the first result.</td>
 <td><code>.mq Shingeki no kyojin</code></td>
 </tr>
 <tr>
 <td><code>.feed</code> <code>.feedadd</code></td>
-<td>Подписывается на канал. Бот после обновления до раз в 10 секунд. Вы можете иметь до 10 каналов на одном сервере. Все каналы должны иметь уникальные адреса. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Subscribes to a feed. Bot will post an update up to once every 10 seconds. You can have up to 10 feeds on one server. All feeds must have unique URLs. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.feed https://www.rt.com/rss/</code></td>
 </tr>
 <tr>
 <td><code>.feedremove</code> <code>.feedrm</code> <code>.feeddel</code></td>
-<td>Перестает отслеживать корма от данного индекса. Используйте <code>.feeds</code> команду, чтобы увидеть список каналов и их индексов. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Stops tracking a feed on the given index. Use <code>.feeds</code> command to see a list of feeds and their indexes. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.feedremove 3</code></td>
 </tr>
 <tr>
 <td><code>.feeds</code> <code>.feedlist</code></td>
-<td>Показывает список каналов, на которые Вы подписаны на этом сервере. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Shows the list of feeds you've subscribed to on this server. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.feeds</code></td>
 </tr>
 <tr>
 <td><code>.yomama</code> <code>.ym</code></td>
-<td>Показывает случайный анекдот <a href="http://api.yomomma.info/">http://api.yomomma.info/</a></td>
+<td>Shows a random joke from <a href="http://api.yomomma.info/">http://api.yomomma.info/</a></td>
 <td><code>.ym</code></td>
 </tr>
 <tr>
 <td><code>.randjoke</code> <code>.rj</code></td>
-<td>Показывает случайный анекдот <a href="http://tambal.azurewebsites.net/joke/random">http://tambal.azurewebsites.net/joke/random</a></td>
+<td>Shows a random joke from <a href="http://tambal.azurewebsites.net/joke/random">http://tambal.azurewebsites.net/joke/random</a></td>
 <td><code>.rj</code></td>
 </tr>
 <tr>
 <td><code>.chucknorris</code> <code>.cn</code></td>
-<td>Показывает случайную Чак Норрис шутки <a href="http://api.icndb.com/jokes/random/">http://api.icndb.com/jokes/random/</a></td>
+<td>Shows a random Chuck Norris joke from <a href="http://api.icndb.com/jokes/random/">http://api.icndb.com/jokes/random/</a></td>
 <td><code>.cn</code></td>
 </tr>
 <tr>
 <td><code>.wowjoke</code></td>
-<td>Получить один из предпоследних Kwoth ничего себе шутки.</td>
+<td>Get one of Kwoth's penultimate WoW jokes.</td>
 <td><code>.wowjoke</code></td>
 </tr>
 <tr>
 <td><code>.magicitem</code> <code>.mi</code></td>
-<td>Показывает случайный магический предмет от <a href="https://1d4chan.org/wiki/List_of_/tg/%27s_magic_items">https://1d4chan.org/wiki/List_of_/tg/%27s_magic_items</a></td>
+<td>Shows a random magic item from <a href="https://1d4chan.org/wiki/List_of_/tg/%27s_magic_items">https://1d4chan.org/wiki/List_of_/tg/%27s_magic_items</a></td>
 <td><code>.mi</code></td>
 </tr>
 <tr>
 <td><code>.memelist</code></td>
-<td>Тянет список мемов можно использовать с <code>.memegen</code> от http://memegen.link/templates/</td>
+<td>Pulls a list of memes you can use with <code>.memegen</code> from http://memegen.link/templates/</td>
 <td><code>.memelist</code></td>
 </tr>
 <tr>
 <td><code>.memegen</code></td>
-<td>Создает мем из memelist с верхней и нижней части текста.</td>
+<td>Generates a meme from memelist with top and bottom text.</td>
 <td><code>.memegen biw "gets iced coffee" "in the winter"</code></td>
 </tr>
 <tr>
 <td><code>.osu</code></td>
-<td>Показывает ОГУ статистика для игрока.</td>
-<td><code>.osu Name</code> или <code>.osu Name taiko</code></td>
+<td>Shows osu stats for a player.</td>
+<td><code>.osu Name</code> or <code>.osu Name taiko</code></td>
 </tr>
 <tr>
 <td><code>.osub</code></td>
-<td>Показывает информацию о осу карту.</td>
+<td>Shows information about an osu beatmap.</td>
 <td><code>.osub https://osu.ppy.sh/s/127712</code></td>
 </tr>
 <tr>
 <td><code>.osu5</code></td>
-<td>Отображает топ пользователя 5 играет.</td>
+<td>Displays a user's top 5 plays.</td>
 <td><code>.osu5 Name</code></td>
 </tr>
 <tr>
 <td><code>.overwatch</code> <code>.ow</code></td>
-<td>Базовая статистика показывает на игрока (спортивный разряд, Продолжительность, уровень и т. д.) коды регионов являются: <code>eu</code> <code>us</code> <code>cn</code> <code>kr</code></td>
-<td><code>.ow us Battletag#1337</code> или <code>.overwatch eu Battletag#2016</code></td>
+<td>Show's basic stats on a player (competitive rank, playtime, level etc) Region codes are: <code>eu</code> <code>us</code> <code>cn</code> <code>kr</code></td>
+<td><code>.ow us Battletag#1337</code> or <code>.overwatch eu Battletag#2016</code></td>
 </tr>
 <tr>
 <td><code>.placelist</code></td>
-<td>Показывает список доступных тегов для <code>.place</code> команды.</td>
+<td>Shows the list of available tags for the <code>.place</code> command.</td>
 <td><code>.placelist</code></td>
 </tr>
 <tr>
 <td><code>.place</code></td>
-<td>Показывает изображение заполнитель определенного тега. Используйте <code>.placelist</code> , чтобы увидеть все доступные теги. Вы можете указать ширину и высоту изображения последние два необязательных аргументов.</td>
-<td><code>.place Cage</code> или <code>.place steven 500 400</code></td>
+<td>Shows a placeholder image of a given tag. Use <code>.placelist</code> to see all available tags. You can specify the width and height of the image as the last two optional arguments.</td>
+<td><code>.place Cage</code> or <code>.place steven 500 400</code></td>
 </tr>
 <tr>
 <td><code>.pokemon</code> <code>.poke</code></td>
-<td>Искать покемонов.</td>
+<td>Searches for a pokemon.</td>
 <td><code>.poke Sylveon</code></td>
 </tr>
 <tr>
 <td><code>.pokemonability</code> <code>.pokeab</code></td>
-<td>Ищет покемонов способности.</td>
+<td>Searches for a pokemon ability.</td>
 <td><code>.pokeab overgrow</code></td>
 </tr>
 <tr>
 <td><code>.smashcast</code> <code>.hb</code></td>
-<td>Уведомляет этот канал, когда указанный пользователь начинает течь. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Notifies this channel when the specified user starts streaming. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.smashcast SomeStreamer</code></td>
 </tr>
 <tr>
 <td><code>.twitch</code> <code>.tw</code></td>
-<td>Уведомляет этот канал, когда указанный пользователь начинает течь. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Notifies this channel when the specified user starts streaming. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.twitch SomeStreamer</code></td>
 </tr>
 <tr>
 <td><code>.picarto</code> <code>.pa</code></td>
-<td>Уведомляет этот канал, когда указанный пользователь начинает течь. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Notifies this channel when the specified user starts streaming. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.picarto SomeStreamer</code></td>
 </tr>
 <tr>
 <td><code>.mixer</code> <code>.bm</code></td>
-<td>Уведомляет этот канал, когда указанный пользователь начинает течь. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Notifies this channel when the specified user starts streaming. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.mixer SomeStreamer</code></td>
 </tr>
 <tr>
 <td><code>.liststreams</code> <code>.ls</code></td>
-<td>Список всех потоков вы следуете на этом сервере.</td>
+<td>Lists all streams you are following on this server.</td>
 <td><code>.ls</code></td>
 </tr>
 <tr>
 <td><code>.removestream</code> <code>.rms</code></td>
-<td>Удаляет уведомления определенного стримера от определенной платформы на этом канале. <strong>Требуется права "Управление Сообщениями".</strong></td>
-<td><code>.rms Twitch SomeGuy</code> или <code>.rms mixer SomeOtherGuy</code></td>
+<td>Removes notifications of a certain streamer from a certain platform on this channel. <strong>Requires ManageMessages server permission.</strong></td>
+<td><code>.rms Twitch SomeGuy</code> or <code>.rms mixer SomeOtherGuy</code></td>
 </tr>
 <tr>
 <td><code>.checkstream</code> <code>.cs</code></td>
-<td>Проверяет, если пользователь находится в сети по определенной потокового платформы.</td>
+<td>Checks if a user is online on a certain streaming platform.</td>
 <td><code>.cs twitch MyFavStreamer</code></td>
 </tr>
 <tr>
 <td><code>.translate</code> <code>.trans</code></td>
-<td>Переводится с&gt;к тексту. С языка на язык назначения.</td>
+<td>Translates from&gt;to text. From the given language to the destination language.</td>
 <td><code>.trans en&gt;fr Hello</code></td>
 </tr>
 <tr>
 <td><code>.autotrans</code> <code>.at</code></td>
-<td>Начинается автоматического перевода всех сообщений пользователей, которые ставят их <code>.atl</code> в этот канал. Можно задать аргумент "дель", чтобы автоматически удалять все сообщения пользователя. <strong>Требуется права "Администратор".</strong> <strong>Владелец бота только</strong></td>
-<td><code>.at</code> или <code>.at del</code></td>
+<td>Starts automatic translation of all messages by users who set their <code>.atl</code> in this channel. You can set "del" argument to automatically delete all translated user messages. <strong>Requires Administrator server permission.</strong> <strong>Bot owner only</strong></td>
+<td><code>.at</code> or <code>.at del</code></td>
 </tr>
 <tr>
 <td><code>.autotranslang</code> <code>.atl</code></td>
-<td>Задает исходный и целевой язык, который будет использоваться при <code>.at</code>. Указывать никаких аргументов снять ранее установленное значение.</td>
+<td>Sets your source and target language to be used with <code>.at</code>. Specify no arguments to remove previously set value.</td>
 <td><code>.atl en&gt;fr</code></td>
 </tr>
 <tr>
 <td><code>.translangs</code></td>
-<td>Список допустимых языков для перевода.</td>
+<td>Lists the valid languages for translation.</td>
 <td><code>.translangs</code></td>
 </tr>
 <tr>
 <td><code>.xkcd</code></td>
-<td>Показывает комикс XKCD. Без аргументов будет получать случайную. Аргумент номер будет извлечь конкретный комикс, а "последний" будет последней.</td>
-<td><code>.xkcd</code> или <code>.xkcd 1400</code> или <code>.xkcd latest</code></td>
+<td>Shows a XKCD comic. No arguments will retrieve random one. Number argument will retrieve a specific comic, and "latest" will get the latest one.</td>
+<td><code>.xkcd</code> or <code>.xkcd 1400</code> or <code>.xkcd latest</code></td>
 </tr>
 </tbody>
 </table>
 
 <table class="highlight bordered">
-    <caption class="blue-text text-darken-2">Утилита команды</caption>
+    <caption class="blue-text text-darken-2">Utility commands</caption>
     <thead>
     <tr>
-        <th>Команда</th>
-        <th>Описание</th>
-        <th>Пример использования</th>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example usage</th>
     </tr>
     </thead>
 <tbody>
 <tr>
 <td><code>.togethertube</code> <code>.totube</code></td>
-<td>Создает новый номер на <a href="https://togethertube.com/">https://togethertube.com</a> и показывает ссылку в чат.</td>
+<td>Creates a new room on <a href="https://togethertube.com">https://togethertube.com</a> and shows the link in the chat.</td>
 <td><code>.totube</code></td>
 </tr>
 <tr>
 <td><code>.whosplaying</code> <code>.whpl</code></td>
-<td>Показывает список пользователей, которые играют в указанной игре.</td>
+<td>Shows a list of users who are playing the specified game.</td>
 <td><code>.whpl Overwatch</code></td>
 </tr>
 <tr>
 <td><code>.inrole</code></td>
-<td>Списки каждый человек из указанной роли на этом сервере. Вы можете использовать идентификатор роль, имя роли.</td>
+<td>Lists every person from the specified role on this server. You can use role ID, role name.</td>
 <td><code>.inrole Some Role</code></td>
 </tr>
 <tr>
 <td><code>.checkperms</code></td>
-<td>Твой проверяет или конкретного пользователя бота разрешения на этот канал.</td>
-<td><code>.checkperms me</code> или <code>.checkperms bot</code></td>
+<td>Checks yours or bot's user-specific permissions on this channel.</td>
+<td><code>.checkperms me</code> or <code>.checkperms bot</code></td>
 </tr>
 <tr>
 <td><code>.userid</code> <code>.uid</code></td>
-<td>Показывает идентификатор пользователя.</td>
-<td><code>.uid</code> или <code>.uid @SomeGuy</code></td>
+<td>Shows user ID.</td>
+<td><code>.uid</code> or <code>.uid @SomeGuy</code></td>
 </tr>
 <tr>
 <td><code>.channelid</code> <code>.cid</code></td>
-<td>Показывает ID текущего канала.</td>
+<td>Shows current channel ID.</td>
 <td><code>.cid</code></td>
 </tr>
 <tr>
 <td><code>.serverid</code> <code>.sid</code></td>
-<td>Показывает текущий идентификатор сервера.</td>
+<td>Shows current server ID.</td>
 <td><code>.sid</code></td>
 </tr>
 <tr>
 <td><code>.roles</code></td>
-<td>Список ролей на этом сервере или роли пользователя, если он указан. Пронумеровано 20 ролей на каждой странице.</td>
-<td><code>.roles 2</code> или <code>.roles @Someone</code></td>
+<td>List roles on this server or roles of a user if specified. Paginated, 20 roles per page.</td>
+<td><code>.roles 2</code> or <code>.roles @Someone</code></td>
 </tr>
 <tr>
 <td><code>.channeltopic</code> <code>.ct</code></td>
-<td>Отправляет теме текущего канала в сообщении.</td>
+<td>Sends current channel's topic as a message.</td>
 <td><code>.ct</code></td>
 </tr>
 <tr>
 <td><code>.createinvite</code> <code>.crinv</code></td>
-<td>Создает новый инвайт, который имеет бесконечный максимум пользы и никогда не истекает. <strong>Требует CreateInstantInvite канал разрешение.</strong></td>
+<td>Creates a new invite which has infinite max uses and never expires. <strong>Requires CreateInstantInvite channel permission.</strong></td>
 <td><code>.crinv</code></td>
 </tr>
 <tr>
 <td><code>.stats</code></td>
-<td>Показать статистику работы Совёнока.</td>
+<td>Shows some basic stats for Mashiro.</td>
 <td><code>.stats</code></td>
 </tr>
 <tr>
 <td><code>.showemojis</code> <code>.se</code></td>
-<td>Показывает название и ссылку на каждый специальный emoji в сообщении.</td>
+<td>Shows a name and a link to every SPECIAL emoji in the message.</td>
 <td><code>.se A message full of SPECIAL emojis</code></td>
 </tr>
 <tr>
 <td><code>.listservers</code></td>
-<td>Сервера списков бот на некоторую базовую информацию. 15 на страницу. <strong>Только для Владельца</strong></td>
+<td>Lists servers the bot is on with some basic info. 15 per page. <strong>Bot owner only</strong></td>
 <td><code>.listservers 3</code></td>
 </tr>
 <tr>
 <td><code>.savechat</code></td>
-<td>Сохраняет количество сообщений в текстовый файл и отправляет его вам. <strong>Только для Владельца</strong></td>
+<td>Saves a number of messages to a text file and sends it to you. <strong>Bot owner only</strong></td>
 <td><code>.savechat 150</code></td>
 </tr>
 <tr>
 <td><code>.ping</code></td>
-<td>Пинг-бот, чтобы увидеть, если есть проблемы с задержкой.</td>
+<td>Ping the bot to see if there are latency issues.</td>
 <td><code>.ping</code></td>
 </tr>
 <tr>
 <td><code>.botconfigedit</code> <code>.bce</code></td>
-<td>Устанавливает один из доступных параметров конфига бота в указанную стоимость. Использовать команду без параметров, чтобы получить список доступных параметров. <strong>Только для Владельца</strong></td>
-<td><code>.bce CurrencyName b1nzy</code> или <code>.bce</code></td>
+<td>Sets one of available bot config settings to a specified value. Use the command without any parameters to get a list of available settings. <strong>Bot owner only</strong></td>
+<td><code>.bce CurrencyName b1nzy</code> or <code>.bce</code></td>
 </tr>
 <tr>
 <td><code>.calculate</code> <code>.calc</code></td>
-<td>Оценить математические выражения.</td>
+<td>Evaluate a mathematical expression.</td>
 <td><code>.calc 1+1</code></td>
 </tr>
 <tr>
 <td><code>.calcops</code></td>
-<td>Показывает все доступные операции в <code>.calc</code> команде</td>
+<td>Shows all available operations in the <code>.calc</code> command</td>
 <td><code>.calcops</code></td>
 </tr>
 <tr>
 <td><code>.alias</code> <code>.cmdmap</code></td>
-<td>Создать пользовательский псевдоним для определенной команды Совёнок. Обеспечивают никакой псевдоним, чтобы удалить существующий. <strong>Требуется права "Администратор".</strong></td>
-<td><code>.alias allin $bf 100 h</code> или <code>.alias "linux thingy" &gt;loonix Spyware Windows</code></td>
+<td>Create a custom alias for a certain Mashiro command. Provide no alias to remove the existing one. <strong>Requires Administrator server permission.</strong></td>
+<td><code>.alias allin $bf 100 h</code> or <code>.alias "linux thingy" &gt;loonix Spyware Windows</code></td>
 </tr>
 <tr>
 <td><code>.aliaslist</code> <code>.cmdmaplist</code> <code>.aliases</code></td>
-<td>Показывает список в настоящее время набор псевдонимов. Постраничная разбивка.</td>
-<td><code>.aliaslist</code> или <code>.aliaslist 3</code></td>
+<td>Shows the list of currently set aliases. Paginated.</td>
+<td><code>.aliaslist</code> or <code>.aliaslist 3</code></td>
 </tr>
 <tr>
 <td><code>.serverinfo</code> <code>.sinfo</code></td>
-<td>Показывает информацию о сервере бот На. Если сервер не указан, по умолчанию это текущий.</td>
+<td>Shows info about the server the bot is on. If no server is supplied, it defaults to current one.</td>
 <td><code>.sinfo Some Server</code></td>
 </tr>
 <tr>
 <td><code>.channelinfo</code> <code>.cinfo</code></td>
-<td>Показывает информацию о канале. Если канал не указан, по умолчанию это текущий.</td>
+<td>Shows info about the channel. If no channel is supplied, it defaults to current one.</td>
 <td><code>.cinfo #some-channel</code></td>
 </tr>
 <tr>
 <td><code>.userinfo</code> <code>.uinfo</code></td>
-<td>Показывает информацию о пользователе. Если пользователь не указан, то по умолчанию пользователь работает команда.</td>
+<td>Shows info about the user. If no user is supplied, it defaults a user running the command.</td>
 <td><code>.uinfo @SomeUser</code></td>
 </tr>
 <tr>
 <td><code>.activity</code></td>
-<td>Чеки для спамеров. <strong>Только для Владельца</strong></td>
+<td>Checks for spammers. <strong>Bot owner only</strong></td>
 <td><code>.activity</code></td>
 </tr>
 <tr>
 <td><code>.parewrel</code></td>
-<td>Сил обновление списка меценатов, которые имеют право на вознаграждение.</td>
+<td>Forces the update of the list of patrons who are eligible for the reward.</td>
 <td><code>.parewrel</code></td>
 </tr>
 <tr>
 <td><code>.clparew</code></td>
-<td>Претензии группе награды. Если вы подписались на группу бота владельца, вы можете использовать эту команду, чтобы требовать вашего награды - если владелец бота сделали установки их ключевой группе.</td>
+<td>Claim patreon rewards. If you're subscribed to bot owner's patreon you can use this command to claim your rewards - assuming bot owner did setup has their patreon key.</td>
 <td><code>.clparew</code></td>
 </tr>
 <tr>
 <td><code>.listquotes</code> <code>.liqu</code></td>
-<td>Перечислены все котировки на сервере в алфавитном порядке или по ID. 15 на страницу.</td>
-<td><code>.liqu 3</code> или <code>.liqu 3 id</code></td>
+<td>Lists all quotes on the server ordered alphabetically or by ID. 15 Per page.</td>
+<td><code>.liqu 3</code> or <code>.liqu 3 id</code></td>
 </tr>
 <tr>
 <td><code>...</code></td>
-<td>Показывает случайную цитату с указанным именем.</td>
+<td>Shows a random quote with a specified name.</td>
 <td><code>... abc</code></td>
 </tr>
 <tr>
 <td><code>.qsearch</code></td>
-<td>Показывает случайную цитату для сайта, которая содержит текст, указанный в поиске.</td>
+<td>Shows a random quote for a keyword that contains any text specified in the search.</td>
 <td><code>.qsearch keyword text</code></td>
 </tr>
 <tr>
 <td><code>.quoteid</code> <code>.qid</code></td>
-<td>Отображает цитату с указанным номером. Цитата идентификационных номеров можно найти, набрав <code>.liqu [num]</code> где <code>[num]</code> - это номер страницы, который содержит 15 предложений.</td>
+<td>Displays the quote with the specified ID number. Quote ID numbers can be found by typing <code>.liqu [num]</code> where <code>[num]</code> is a number of a page which contains 15 quotes.</td>
 <td><code>.qid 123456</code></td>
 </tr>
 <tr>
 <td><code>..</code></td>
-<td>Добавляет новую цитату с указанным именем и сообщением.</td>
+<td>Adds a new quote with the specified name and message.</td>
 <td><code>.. sayhi Hi</code></td>
 </tr>
 <tr>
 <td><code>.quotedel</code> <code>.qdel</code></td>
-<td>Удаляет цитату с указанным идентификатором. Вы должны быть администратором сервера или создатель цитату, чтобы удалить его.</td>
+<td>Deletes a quote with the specified ID. You have to be either server Administrator or the creator of the quote to delete it.</td>
 <td><code>.qdel 123456</code></td>
 </tr>
 <tr>
 <td><code>.delallq</code> <code>.daq</code></td>
-<td>Удаление всех котировок на заданное ключевое слово. <strong>Требуется права "Администратор".</strong></td>
+<td>Deletes all quotes on a specified keyword. <strong>Requires Administrator server permission.</strong></td>
 <td><code>.delallq kek</code></td>
 </tr>
 <tr>
 <td><code>.remind</code></td>
-<td>Посылает вам сообщение или канал после определенного количества времени. Первый аргумент <code>me</code>/<code>here</code>/'имя-канала'. Вторым аргументом является время в порядке убывания (МО&gt;з&gt;д&gt;н&gt;м) пример: 1w5d3h10m. Третий аргумент-это сообщение (длинные).</td>
-<td><code>.remind me 1d5h Do something</code> или <code>.remind #general 1m Start now!</code></td>
+<td>Sends a message to you or a channel after certain amount of time. First argument is <code>me</code>/<code>here</code>/'channelname'. Second argument is time in a descending order (mo&gt;w&gt;d&gt;h&gt;m) example: 1w5d3h10m. Third argument is a (multiword) message.</td>
+<td><code>.remind me 1d5h Do something</code> or <code>.remind #general 1m Start now!</code></td>
 </tr>
 <tr>
 <td><code>.remindtemplate</code></td>
-<td>Задает сообщение, когда напомнить срабатывает. Имеющиеся заполнители <code>%user%</code> - пользователя, запустившего команду, <code>%message%</code> - Сообщения, указанного в напоминать, <code>%target%</code> - цель канала напоминать. <strong>Только для Владельца</strong></td>
+<td>Sets message for when the remind is triggered.  Available placeholders are <code>%user%</code> - user who ran the command, <code>%message%</code> - Message specified in the remind, <code>%target%</code> - target channel of the remind. <strong>Bot owner only</strong></td>
 <td><code>.remindtemplate %user%, do %message%!</code></td>
 </tr>
 <tr>
 <td><code>.repeatinvoke</code> <code>.repinv</code></td>
-<td>Сразу показывает повторить сообщение на определенный индекс и перезапускает Таймер. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Immediately shows the repeat message on a certain index and restarts its timer. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.repinv 1</code></td>
 </tr>
 <tr>
 <td><code>.repeatremove</code> <code>.reprm</code></td>
-<td>Удаляет повторяющиеся сообщения на указанный индекс. Использовать <code>.repeatlist</code> , чтобы увидеть индексов. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Removes a repeating message on a specified index. Use <code>.repeatlist</code> to see indexes. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.reprm 2</code></td>
 </tr>
 <tr>
 <td><code>.repeat</code></td>
-<td>Повторите сообщение каждые <code>X</code> минут в текущем канале. Вместо этого можно указать время суток, на сообщение повторяется в день (убедитесь, что вы установили Часовой пояс вашего сервера). Вы можете иметь до 5 повторение сообщения на сервере в целом. <strong>Требуется права "Управление Сообщениями".</strong></td>
-<td><code>.repeat 5 Hello there</code> или <code>.repeat 17:30 tea time</code></td>
+<td>Repeat a message every <code>X</code> minutes in the current channel. You can instead specify time of day for the message to be repeated at daily (make sure you've set your server's timezone). You can have up to 5 repeating messages on the server in total. <strong>Requires ManageMessages server permission.</strong></td>
+<td><code>.repeat 5 Hello there</code> or <code>.repeat 17:30 tea time</code></td>
 </tr>
 <tr>
 <td><code>.repeatlist</code> <code>.replst</code></td>
-<td>Показывает в настоящее время повторяющихся сообщений и их индексов. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Shows currently repeating messages and their indexes. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.repeatlist</code></td>
 </tr>
 <tr>
 <td><code>.streamrole</code></td>
-<td>Задает роль, которую контролируется на стриме (FromRole), и роли, чтобы добавить, если пользователь из FromRole является течь (AddRole). Когда пользователь из FromRole начинает течь, они получат 'AddRole'. Предоставить никаких аргументов, чтобы отключить <strong>ManageRoles сервер требует разрешений.</strong></td>
+<td>Sets a role which is monitored for streamers (FromRole), and a role to add if a user from 'FromRole' is streaming (AddRole). When a user from 'FromRole' starts streaming, they will receive an 'AddRole'. Provide no arguments to disable <strong>Requires ManageRoles server permission.</strong></td>
 <td><code>.streamrole "Eligible Streamers" "Featured Streams"</code></td>
 </tr>
 <tr>
 <td><code>.streamrolekw</code> <code>.srkw</code></td>
-<td>Задает ключевое слово, которое требуется в Название потока для того, чтобы streamrole применять. Обеспечить нет сайта для того, чтобы сбросить. <strong>Требует ManageRoles сервер разрешения.</strong></td>
-<td><code>.srkw</code> или <code>.srkw PUBG</code></td>
+<td>Sets keyword which is required in the stream's title in order for the streamrole to apply. Provide no keyword in order to reset. <strong>Requires ManageRoles server permission.</strong></td>
+<td><code>.srkw</code> or <code>.srkw PUBG</code></td>
 </tr>
 <tr>
 <td><code>.streamrolebl</code> <code>.srbl</code></td>
-<td>Добавляет или удаляет черные списки пользователей. Блокированные пользователи не получат роль в потоке. <strong>Требует ManageRoles сервер разрешения.</strong></td>
-<td><code>.srbl add @b1nzy#1234</code> или <code>.srbl rem @b1nzy#1234</code></td>
+<td>Adds or removes a blacklisted user. Blacklisted users will never receive the stream role. <strong>Requires ManageRoles server permission.</strong></td>
+<td><code>.srbl add @b1nzy#1234</code> or <code>.srbl rem @b1nzy#1234</code></td>
 </tr>
 <tr>
 <td><code>.streamrolewl</code> <code>.srwl</code></td>
-<td>Добавляет или удаляет пользователей из белого списка. Пользователям из белого списка получат роль в поток, даже если у них нет указанного ключевого слова в заголовке потока. <strong>Требует ManageRoles сервер разрешения.</strong></td>
-<td><code>.srwl add @b1nzy#1234</code> или <code>.srwl rem @b1nzy#1234</code></td>
+<td>Adds or removes a whitelisted user. Whitelisted users will receive the stream role even if they don't have the specified keyword in their stream title. <strong>Requires ManageRoles server permission.</strong></td>
+<td><code>.srwl add @b1nzy#1234</code> or <code>.srwl rem @b1nzy#1234</code></td>
 </tr>
 <tr>
 <td><code>.convertlist</code></td>
-<td>Список конвертируемых измерения и валют.</td>
+<td>List of the convertible dimensions and currencies.</td>
 <td><code>.convertlist</code></td>
 </tr>
 <tr>
 <td><code>.convert</code></td>
-<td>Преобразования величин. Используйте <code>.convertlist</code> , чтобы увидеть Поддерживаемые размеры и валюты.</td>
+<td>Convert quantities. Use <code>.convertlist</code> to see supported dimensions and currencies.</td>
 <td><code>.convert m km 1000</code></td>
 </tr>
 <tr>
 <td><code>.verboseerror</code> <code>.ve</code></td>
-<td>Должен ли бот уведомлять о неправильно введенной команде. <strong>Требуется права "Управление Сообщениями".</strong></td>
+<td>Toggles whether the bot should print command errors when a command is incorrectly used. <strong>Requires ManageMessages server permission.</strong></td>
 <td><code>.ve</code></td>
 </tr>
 </tbody>
 </table>
-
+			
 <table class="highlight bordered">
     <caption class="blue-text text-darken">Система уровней(XP)</caption>
     <thead>
